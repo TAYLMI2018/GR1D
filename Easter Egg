@@ -1,0 +1,15 @@
+import time
+
+print ("EE \n How Well Do You Know The Creators")
+egg = str(input())
+
+if egg == ("GR1D"):
+  print ("Well Done!")
+  time.sleep(1)
+  print ("GR1D access owned")
+  time.sleep(1)
+  print ("please keep this easter egg secret")
+ 
+else:
+  print ("more depth needed")
+  
