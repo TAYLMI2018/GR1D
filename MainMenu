@@ -18,4 +18,4 @@ def mainmenu():
     choice = input()
 
     if choice == "1" or  "Personal Factfile"
-    print 
+    print ("Taking you to your Personal Factfile Now")
