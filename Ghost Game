@@ -19,7 +19,7 @@ while usernumb != ghostnumber:
     ghostnumber = random.randint(1,4)
     print( ' ' )
     print( ' ' )
-
+    print( ' ' )
     print('LEVEL', level)
     time.sleep(4)
     print( ' ' )
