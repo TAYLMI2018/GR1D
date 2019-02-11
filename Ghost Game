@@ -8,7 +8,7 @@ print('Welcome to Ghost Game! Your challenge is to make it through as many doors
 print( ' ' )
 print(' Please dont type anything until the game has loaded')
 
-time.sleep(8)
+time.sleep(4)
 
 usernumb = 0
 ghostnumber = 10
