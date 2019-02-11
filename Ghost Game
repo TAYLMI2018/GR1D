@@ -31,6 +31,8 @@ while usernumb != ghostnumber:
     print( ' ' )
     time.sleep(2)
     
+    if usernumb < 5 quit
+    
     print("Ghost is behind door " , ghostnumber)
 
     time.sleep(2)
