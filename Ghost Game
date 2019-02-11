@@ -4,7 +4,7 @@ import random
 import time
 
 
-print('Welcome to Ghost Game! Your challenge is to make it through as many doors as you \npossibly can before getting caught by the ghost.')
+print('Welcome to Ghost Game! Your challenge is to make it through as many doors as you \npossibly can before getting caught by the Gh0st.')
 print( ' ' )
 print(' Please dont type anything until the game has loaded')
 
@@ -37,10 +37,10 @@ while usernumb != ghostnumber:
     
     if usernumb == ghostnumber:
         print( ' ' )
-        print('OH NO! You found the ghost! at least the ghost is not hungry anymore! Game Over!')
+        print('OH NO! You found the Gh0st! at least the ghost is not hungry anymore! Game Over!')
         print( ' ' )
         time.sleep(2)
-        print('the Ghost says. HA HA HA! You cannot fool me, I have eaten many humans \nwho try & outsmart me but none of them can. >:]')
+        print('the Gh0st says. HA HA HA! You cannot fool me, I have eaten many humans \nwho try & outsmart me but none of them can. >:]')
         print( ' ' )
               
         print ("Your final score is " , score)
@@ -49,7 +49,7 @@ while usernumb != ghostnumber:
         
     else:
         print( ' ' )
-        print('Phew! your are safe. no dinner for the Ghost this time.')
+        print('Phew! your are safe. no dinner for the Gh0st this time.')
         time.sleep(2)
         score = score + 1
         level = level + 1
