@@ -18,4 +18,6 @@ def mainmenu():
     choice = input()
 
     if choice == "1" or  "Personal Factfile"
-    print ("Taking you to your Personal Factfile Now")
+    print ("Would you like to see your Personal Factfile")
+    print ("Taking you to your Personal Factfile now")
+    factfilefun()
