@@ -1,4 +1,10 @@
 def mainmenu():
+    
+
+
+    
+    
+    
     print ("Welcome to the GR1D menu")
     print ("Please select the number of the function you would like to acess")
     print ("1. Personal Factfile")
@@ -11,4 +17,5 @@ def mainmenu():
     print ("Please input the function you would like")
     choice = input()
 
-    if choice == (1) or 
+    if choice == "1" or  "Personal Factfile"
+    print 
