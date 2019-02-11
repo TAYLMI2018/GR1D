@@ -5,5 +5,8 @@ def mainmenu():
     print ("2. Calculator")
     print ("3. Turtle Drawing")
     print ("4. Sleep Calculator")
+    print ("5. Games")
+    print ("6. ")
+    print ("7. ")
     print ("Please input the function you would like")
     choice = input()
