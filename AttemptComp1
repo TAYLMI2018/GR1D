@@ -59,19 +59,21 @@ def Calculator():
             
 def Credits():
 
-  import time
-  print ("Created By \n Harry Brookes")
-  print (" ")
-  time.sleep(1)
-  print ("Co-Produced By \n Ben Leacock")
-  print (" ")
-  time.sleep(1)
-  print ("Calculator Was Helped By \n Sam Kerr")
-  print (" ")
-  time.sleep(1)
-  print ("Game Made By \n Charlie Patterson")
-  print (" ")
-  time.sleep(1)
-  print (" Made On \n Python 3.3 Idle")
+        import time
+        
+        
+        print ("Created By \n Harry Brookes")
+        print (" ")
+        time.sleep(1)
+        print ("Co-Produced By \n Ben Leacock")
+        print (" ")
+        time.sleep(1)
+        print ("Calculator Was Helped By \n Sam Kerr")
+        print (" ")
+        time.sleep(1)
+        print ("Game Made By \n Charlie Patterson")
+        print (" ")
+        time.sleep(1)
+        print (" Made On \n Python 3.3 Idle")
 
 
