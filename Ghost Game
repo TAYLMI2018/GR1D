@@ -1,41 +1,43 @@
-#Ghost Game V5
+def GhostGame():
 
-import random
-import time
+    #Ghost Game V5
+
+    import random
+    import time
 
 
-print('Welcome to Ghost Game! Your challenge is to make it through as many doors as you \npossibly can before getting caught by the Gh0st.')
-print( ' ' )
-print(' Please dont type anything until the game has loaded')
-
-time.sleep(4)
-
-usernumb = 0
-ghostnumber = 10
-score = 0
-level = 1
-
-while usernumb != ghostnumber:
-    ghostnumber = random.randint(1,4)
+    print('Welcome to Ghost Game! Your challenge is to make it through as many doors as you \npossibly can before getting caught by the Gh0st.')
     print( ' ' )
-    print( ' ' )
-    print( ' ' )
-    print('LEVEL', level)
+    print(' Please dont type anything until the game has loaded')
+
     time.sleep(4)
-    print( ' ' )
-    print('You have come across 4 doors. choose door 1 to 4 to survive.')
-    
-    usernumb = int(input())
-    
-    print ("You have chosen door number " , usernumb)
-    print( ' ' )
-    time.sleep(2)
-    
-    if usernumb < 5 quit
-    
-    print("Ghost is behind door " , ghostnumber)
 
-    time.sleep(2)
+    usernumb = 0
+    ghostnumber = 10
+    score = 0
+    level = 1
+
+    while usernumb != ghostnumber:
+        ghostnumber = random.randint(1,4)
+        print( ' ' )
+        print( ' ' )
+        print( ' ' )
+        print('LEVEL', level)
+        time.sleep(4)
+        print( ' ' )
+        print('You have come across 4 doors. choose door 1 to 4 to survive.')
+    
+        usernumb = int(input())
+    
+        print ("You have chosen door number " , usernumb)
+        print( ' ' )
+        time.sleep(2)
+    
+        if usernumb < 5 quit
+    
+        print("Ghost is behind door " , ghostnumber)
+
+        time.sleep(2)
     
     if usernumb == ghostnumber:
         print( ' ' )
