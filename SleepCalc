@@ -1,24 +1,26 @@
-print("Sleep Calculator")
-print("                     ")
-print(firstname, "many hours do you sleep per night?")
+def SleepCalculator:
 
-hourspernight = int(input())
+  print("Sleep Calculator")
+  print("                     ")
+  print(firstname, "many hours do you sleep per night?")
 
-print("Less than 8 hours of sleep per night this can increase stress levels.")
+  hourspernight = int(input())
 
-hoursperweek = hourspernight * 7
+  print("Less than 8 hours of sleep per night this can increase stress levels.")
 
-print("You sleep",hoursperweek,"hours every week")
-print(" ")
+  hoursperweek = hourspernight * 7
 
-hourspermonth = hoursperweek * 4.35
+  print("You sleep",hoursperweek,"hours every week")
+  print(" ")
 
-print("You sleep",hourspermonth,"hours every month")
-print(" ")
+  hourspermonth = hoursperweek * 4.35
 
-hoursperyear = hourspernight * 365
+  print("You sleep",hourspermonth,"hours every month")
+  print(" ")
 
-print ("You sleep",hoursperyear,"hours per year")
-print(" ")
+  hoursperyear = hourspernight * 365
+
+  print ("You sleep",hoursperyear,"hours per year")
+  print(" ")
 
 
