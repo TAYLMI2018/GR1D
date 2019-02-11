@@ -10,3 +10,5 @@ def mainmenu():
     print ("7. Log Out of the GR1D")
     print ("Please input the function you would like")
     choice = input()
+
+    if choice == (1) or 
