@@ -1,1 +1,60 @@
+def Calculator():
+
+        print("     ********************")
+        print("     * 1.Addition       *")
+        print("     * 2.Subtraction    *")
+        print("     * 3.Mulitiplication*")
+        print("     * 4.Division       *")
+        print("     * 5.Powers         *")
+        print("     * 6.Exit           *")
+        print("     ********************")
+        print("Choose your operation by typing the number before the opperation.")
+        user_input = str(input())
+
+        if user_input == "6" or "Exit":
+                print ("quit") 
+
+        elif user_input == "1" or "Addition":
+                print ("Enter a number")
+                numb_1 = float(input())
+                print ("Enter another number")
+                numb_2 = float(input())
+                print (numb_1 ,"+", numb_2 ,"=")
+                print (numb_1 + numb_2)
+
+        elif user_input == "2" or "Subtraction":
+                print ("Enter a number")
+                number_1 = float(input())
+                print ("Enter another number")
+                number_2 = float(input())
+                print (number_1 ,"-", number_2 ,"=")
+                print (number_1 - number_2)
+                       
+        elif user_input == "3" or "Multiplication":
+                print ("Enter a number")
+                numbe_1 = float(input())
+                print ("Enter another number")
+                numbe_2 = float(input())
+                print (numbe_1 ,"x", numbe_2 ,"=")
+                print (numbe_1 * numbe_2)
+
+        elif user_input == "4" or "Division":
+                print ("Enter a number")
+                num_1 = float(input())
+                print ("Enter another number")
+                num_2 = float(input())
+                print (num_1 ,"%", num_2 ,"=")
+                print (num_1 / num_2)
+
+        elif user_imput == "5" or "Powers":
+                print("Enter the number you would like to power")
+                no_1 = float(imput())
+                print("Enter the power")
+                no_2 = float(imput())
+                print(no_1, "to the power of" no_2,"=")
+                print(no_1 ** no_2)
+
+        else:
+                print("Unknown Input")
+
 
