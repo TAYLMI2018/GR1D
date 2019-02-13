@@ -1,7 +1,20 @@
 import time
 
-print ("EE \n How Well Do You Know The Creators")
-egg = str(input())
+def TurtleDrawingSam():
+
+    import turtle
+
+    wn = turtle.Screen()
+    wn.bgcolor("yellow")
+
+    bob = turtle.Turtle()
+    bob.speed(0)
+    
+    def GR1D():
+        for i in range(sides):
+            bob.forward(size)
+            bob.left(360/sides)
+
 
 if egg == ("GR1D"):
   print ("Well Done!")
@@ -9,6 +22,7 @@ if egg == ("GR1D"):
   print ("GR1D access owned")
   time.sleep(1)
   print ("please keep this easter egg secret")
+  print (GR1D)
  
 else:
   print ("more depth needed")
