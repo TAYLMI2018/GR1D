@@ -1,29 +1,35 @@
 import time
 
-def TurtleDrawingSam():
-
     import turtle
 
     wn = turtle.Screen()
-    wn.bgcolor("yellow")
+    wn.bgcolor("black")
+    
 
     bob = turtle.Turtle()
     bob.speed(0)
+    bob.width(5)
     
     def GR1D():
-        for i in range(sides):
-            bob.forward(size)
-            bob.left(360/sides)
-
-
+        for i in range(1):
+            bob.forward(5)
+            bob.left(90)
+            bob.forward(10)
+            bob.left(90)
+            bob.forward(10)
+            bob.left(90)
+            bob.forward(10)
+            bob.left(90)
+            bob.forward(3)
+            bob.left(90)
+            bob.forward(3)
+            
+            
 if egg == ("GR1D"):
   print ("Well Done!")
   time.sleep(1)
   print ("GR1D access owned")
   time.sleep(1)
-  print ("please keep this easter egg secret")
-  print (GR1D)
- 
-else:
-  print ("more depth needed")
-  
+  print ("please keep this easter egg secret...")
+  time.sleep(1)
+  print (GR1D) 
