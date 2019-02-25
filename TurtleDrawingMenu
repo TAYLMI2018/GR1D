@@ -1,0 +1,9 @@
+def turtledrawing():
+  print("Would you like a :")
+  print("Polygon/Spyrograph Automatic Drawer = 1")
+  print("A DIY drawing service = 2")
+  print("A flower drawing service = 3")
+  choiceforturtle = input()
+  
+  if choiceforturtle == "Polygon/Syprograph Automatic Drawer" or "1":
+    print(turtledrawingben)
