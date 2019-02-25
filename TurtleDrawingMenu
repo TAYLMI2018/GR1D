@@ -11,3 +11,6 @@ def turtledrawing():
   
   if choiceforturtle == "A DIY drawing service" or "2":
     print(turtledrawingharry)
+    
+  if choiceforturtle == "A flower drawing service" or "3":
+    print(turtledrawingcharlie)
