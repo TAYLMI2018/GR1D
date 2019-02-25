@@ -30,14 +30,25 @@ def mainmenu():
             mainmenu()
     
     
-    elif choice == "2" or "Calculator"
+    elif choice == "2" or "Calculator":
          print ("Would you like to access the Calculator?")
-        print ("y/n")
-        input() = yesorno
-        if yesorno == y:
+         print ("y/n")
+         input() = yesorno
+         if yesorno == y:
             print ("Taking you to the Calculator now")
             Calculator()
         elif yesorno == n:
             print ("Taking you back to the main menu")
             mainmenu()
-    
+            
+            
+    elif choice == "3" or "Turtle Drawing":
+         print ("Would you like to access the Turtle Drawing?")
+         print ("y/n")
+         input() = yesorno
+         if yesorno == y:
+            print ("Taking you to the Turtle Drawing now")
+            Calculator()
+        elif yesorno == n:
+            print ("Taking you back to the main menu")
+            mainmenu()
