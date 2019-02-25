@@ -51,7 +51,7 @@ def Calculator():
                 no_1 = float(imput())
                 print("Enter the power")
                 no_2 = float(imput())
-                print(no_1, "to the power of" no_2,"=")
+                print(no_1, "to the power of", no_2 ,"=")
                 print(no_1 ** no_2)
 
         else:
