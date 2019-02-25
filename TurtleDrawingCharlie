@@ -1,33 +1,33 @@
-if choice == 
+def turtledrawingcharlie():
 
-import turtle
+    import turtle
 
-wn = turtle.Screen()
-wn.bgcolor('black')
+    wn = turtle.Screen()
+    wn.bgcolor('black')
 
-bob = turtle.Turtle()
-bob.speed(0)
-bob.color('yellow')
-bob.width(2)
+    bob = turtle.Turtle()
+    bob.speed(0)
+    bob.color('yellow')
+    bob.width(2)
 
-def flower():
-    for i in range(36):
-        square()
-        bob.left(10)
+    def flower():
+        for i in range(36):
+            square()
+            bob.left(10)
 
-def square():
-    for i in range(4):
-        bob.forward(200)
-        bob.left(90)
+    def square():
+        for i in range(4):
+            bob.forward(200)
+            bob.left(90)
 
-def flower2():
-    for i in range(6):
-        bob.right(115)
-        flower()
+    def flower2():
+        for i in range(6):
+            bob.right(115)
+            flower()
 
-flower2()
+    flower2()
 
-##for i in range(360):
-##bob.left(1)
+    ##for i in range(360):
+    ##bob.left(1)
 
-wn.exitonclick()
+    wn.exitonclick()
