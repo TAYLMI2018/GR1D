@@ -3,7 +3,11 @@ def turtledrawing():
   print("Polygon/Spyrograph Automatic Drawer = 1")
   print("A DIY drawing service = 2")
   print("A flower drawing service = 3")
+  print("Input the number of which you would like to do")
   choiceforturtle = input()
   
   if choiceforturtle == "Polygon/Syprograph Automatic Drawer" or "1":
     print(turtledrawingben)
+  
+  if choiceforturtle == "A DIY drawing service" or "2":
+    print(turtledrawingharry)
