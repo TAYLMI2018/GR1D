@@ -38,26 +38,4 @@ def factfilefun():
     #telling the user their username
     print ("Your username is:",username)
 
-def Gr1d():
-    global username
-    valid = False
 
-    while valid == False:
-        print ("Welcome to the GR1D system")
-        print ("**************************")    
-        print ("Please enter your username")    
-        entrance = input()
-        
-        if entrance == username:
-            print("Access granted")
-            valid = True
-            mainmenu()
-        elif entrance == ("backdoor"):
-            print ("Access granted")
-            valid = True
-            mainmenu()
-            
-        else:
-            print ("Access denied")
-            print ("Please try again")
-            valid = False
