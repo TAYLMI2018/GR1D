@@ -4,11 +4,12 @@ print("Enter '1' to add two numbers")
 print("Enter '2' to subtract two numbers")
 print("Enter '3' to multiply two numbers")
 print("Enter '4' to divide two numbers")
-print("Enter '5' to end the program")
+print("Enter '5' to power two numbers")
+print("Enter '6' to end the program")
 print("*****************************************")
 user_input = str(input())
 
-if user_input == "5":
+if user_input == "6":
         print ("quit") 
 
 elif user_input == "1":
@@ -43,13 +44,14 @@ elif user_input == "4":
         print (num_1 ,"%", num_2 ,"=")
         print (num_1 / num_2)
 
-elif user_imput == "5" or "Powers":
-    print("Enter the number you would like to power")
+elif user_input == "5":
+    print ("Enter a number you would like to power")
     no_1 = float(input())
-    print("Enter the power")
+    print ("Enter the power")
     no_2 = float(input())
-    print(no_1, "to the power of", no_2 ,"=")
+    print(no_1, "to the power of", no_2, "=")
     print(no_1 ** no_2)
 
 else:
         print("Unknown input")
+
