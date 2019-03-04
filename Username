@@ -8,9 +8,10 @@ firstname = input()
 print ("Hello,", firstname)
 print (firstname,", What is your middle name")
 middlename = input()
-print ("Hello,", "firstname,"," middlename")
+print ("Hello,", firstname, middlename)
 
 #lastname, asks for lastnane and inputs it to a variable
+print (' ')
 print ("Hello,", firstname)
 print (firstname,", what is your last name")
 lastname = input()
