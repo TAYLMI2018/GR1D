@@ -59,7 +59,18 @@ def mainmenu():
          input() = yesorno
          if yesorno == y:
             print ("Taking you to the Sleep Calculator now")
-            Calculator()
+            SleepCalculator()
+        elif yesorno == n:
+            print ("Taking you back to the main menu now")
+            mainmenu()
+           
+    elif choice == "5" or "Games":
+         print ("Would you like to access the Games Menu?")
+         print ("y/n")
+         input() = yesorno
+         if yesorno == y:
+            print ("Taking you to the Games Menu now")
+            gamemenu()
         elif yesorno == n:
             print ("Taking you back to the main menu now")
             mainmenu()
