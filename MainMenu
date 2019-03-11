@@ -74,3 +74,14 @@ def mainmenu():
         elif yesorno == n:
             print ("Taking you back to the main menu now")
             mainmenu()
+            
+    elif choice == "6" or "Credits":
+         print ("Would you like to access the Credits?")
+         print ("y/n")
+         input() = yesorno
+         if yesorno == y:
+            print ("Taking you to the Credits now")
+            Credits()
+        elif yesorno == n:
+            print ("Taking you back to the main menu now")
+            mainmenu()
