@@ -52,3 +52,14 @@ def mainmenu():
         elif yesorno == n:
             print ("Taking you back to the main menu now")
             mainmenu()
+
+    elif choice == "4" or "Sleep Calculator":
+         print ("Would you like to access the Sleep Calculator?")
+         print ("y/n")
+         input() = yesorno
+         if yesorno == y:
+            print ("Taking you to the Sleep Calculator now")
+            Calculator()
+        elif yesorno == n:
+            print ("Taking you back to the main menu now")
+            mainmenu()
