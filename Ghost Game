@@ -1,50 +1,77 @@
-def GhostGame():
+def(Ghost Game):
 
-    #Ghost Game V5
+#Ghost Game V6
 
-    import random
-    import time
+import random
+import time
+
+print('Ghost Game')
+time.sleep(1)
+print( ' ' )
+print('Version 6')
+time.sleep(1)
+print ( ' ' )
+print('Created by Chaz Patterson on 12/1/2019')
+time.sleep(1)
+print( ' ' )
+print(' Supported by Gr1d')
+time.sleep(4)
+
+print( ' ' )
+print( ' ' )
 
 
-    print('Welcome to Ghost Game! Your challenge is to make it through as many doors as you \npossibly can before getting caught by the Gh0st.')
+print('Welcome to Ghost Game! Your challenge is to make it through as many doors as you \npossibly can before getting caught by the ghost.')
+print( ' ' )
+print(' Please dont type anything until the game has loaded')
+
+time.sleep(3)
+
+usernumb = 0
+ghostnumber = 10
+score = 0
+level = 1
+
+while usernumb != ghostnumber:
+    ghostnumber = random.randint(1,4)
     print( ' ' )
-    print(' Please dont type anything until the game has loaded')
+    print( ' ' )
 
-    time.sleep(4)
+    print('LEVEL', level)
+    time.sleep(1)
+    print('^^^^^^^')
+    time.sleep(2)
+    print ('3')
+    time.sleep(1)
+    print ( ' ' )
+    print ('2')
+    time.sleep(1)
+    print ( ' ' )
+    print ('1')
+    time.sleep(1)
 
-    usernumb = 0
-    ghostnumber = 10
-    score = 0
-    level = 1
+    print( ' ' )
+    print('You have come across 4 doors. choose door 1 to 4 to survive.')
+    
+    usernumb = int(input())
+    
+    print ("You have chosen door number " , usernumb)
+    print( ' ' )
+    time.sleep(2)
+    
+    print("Ghost is behind")
+    time.sleep(2)
+    print( ' ' )
+    print('Door', ghostnumber)
 
-    while usernumb != ghostnumber:
-        ghostnumber = random.randint(1,4)
-        print( ' ' )
-        print( ' ' )
-        print( ' ' )
-        print('LEVEL', level)
-        time.sleep(4)
-        print( ' ' )
-        print('You have come across 4 doors. choose door 1 to 4 to survive.')
-    
-        usernumb = int(input())
-    
-        print ("You have chosen door number " , usernumb)
-        print( ' ' )
-        time.sleep(2)
-    
-        if usernumb < 5 quit
-    
-        print("Ghost is behind door " , ghostnumber)
-
-        time.sleep(2)
+    time.sleep(2)
     
     if usernumb == ghostnumber:
         print( ' ' )
-        print('OH NO! You found the Gh0st! at least the ghost is not hungry anymore! Game Over!')
+        print('OH NO! You found the Ghost! at least the ghost is not hungry anymore! Game Over!')
         print( ' ' )
         time.sleep(2)
-        print('the Gh0st says. HA HA HA! You cannot fool me, I have eaten many humans \nwho try & outsmart me but none of them can. >:]')
+        print('the Ghost says. HA HA HA! You cannot fool me, I have eaten many humans \nwho try & outsmart me but none of them can. >:]')
         print( ' ' )
               
         print ("Your final score is " , score)
@@ -53,7 +80,7 @@ def GhostGame():
         
     else:
         print( ' ' )
-        print('Phew! your are safe. no dinner for the Gh0st this time.')
+        print('Phew! your are safe. no dinner for the Ghost this time.')
         time.sleep(2)
         score = score + 1
         level = level + 1
@@ -62,3 +89,4 @@ def GhostGame():
         print ("Your score is " , score)
         print ( ' ' )
         time.sleep(2)
+      
