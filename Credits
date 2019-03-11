@@ -7,7 +7,7 @@ def Credits():
   print ("Co-Produced By \n Ben Leacock")
   print (" ")
   time.sleep(1)
-  print ("Calculator Was Helped By \n Sam Kerr")
+  print ("Turtle Guru \n Sam Kerr")
   print (" ")
   time.sleep(1)
   print ("Game Made By \n Charlie Patterson")
