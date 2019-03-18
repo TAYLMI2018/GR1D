@@ -1,6 +1,6 @@
 def(ghostgame):
 
-#Ghost Game V6
+#Ghost Game V7
 
 import random
 import time
@@ -8,13 +8,19 @@ import time
 print('Ghost Game')
 time.sleep(1)
 print( ' ' )
-print('Version 6')
+print('Version 7')
 time.sleep(1)
 print ( ' ' )
 print('Created by Chaz Patterson on 12/1/2019')
 time.sleep(1)
 print( ' ' )
-print(' Supported by Gr1d')
+print('Supported by Gr1d')
+time.sleep(1)
+print(' ')
+print('Managed by Ben, Harry, Sam and Chaz')
+time.sleep(1)
+print(' ')
+print('Created on Python 3.3')
 time.sleep(4)
 
 print( ' ' )
@@ -23,7 +29,7 @@ print( ' ' )
 
 print('Welcome to Ghost Game! Your challenge is to make it through as many doors as you \npossibly can before getting caught by the ghost.')
 print( ' ' )
-print(' Please dont type anything until the game has loaded')
+print(' Please dont type anything until the game has loaded. this could confuse the shell')
 
 time.sleep(3)
 
@@ -40,15 +46,7 @@ while usernumb != ghostnumber:
     print('LEVEL', level)
     time.sleep(1)
     print('^^^^^^^')
-    time.sleep(2)
-    print ('3')
-    time.sleep(1)
-    print ( ' ' )
-    print ('2')
-    time.sleep(1)
-    print ( ' ' )
-    print ('1')
-    time.sleep(1)
+    time.sleep(3)
 
     print( ' ' )
     print('You have come across 4 doors. choose door 1 to 4 to survive.')
@@ -68,10 +66,10 @@ while usernumb != ghostnumber:
     
     if usernumb == ghostnumber:
         print( ' ' )
-        print('OH NO! You found the Ghost! at least the ghost is not hungry anymore! Game Over!')
+        print('OH NO! You found the Ghost! no point running. you have been eaten. at least \n the ghost is not hungry anymore! Game Over!')
         print( ' ' )
         time.sleep(2)
-        print('the Ghost says. HA HA HA! You cannot fool me, I have eaten many humans \nwho try & outsmart me but none of them can. >:]')
+        print('the Ghost smiles. HA HA HA! You cannot fool me, I have eaten many humans \nwho try & outsmart me but none of them can. >:]')
         print( ' ' )
               
         print ("Your final score is " , score)
@@ -80,7 +78,7 @@ while usernumb != ghostnumber:
         
     else:
         print( ' ' )
-        print('Phew! your are safe. no dinner for the Ghost this time.')
+        print('Phew! your are safe. no dinner for the Ghost this time. +1 point')
         time.sleep(2)
         score = score + 1
         level = level + 1
