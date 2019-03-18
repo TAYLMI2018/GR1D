@@ -107,7 +107,7 @@ print("Enter '6' to end the program")
 print("*****************************************")
 user_input = str(input())
 
-def Calculator()
+def Calculator():
 
     if user_input == "6":
             print ("quit") 
