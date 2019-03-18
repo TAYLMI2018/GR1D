@@ -2,7 +2,7 @@ import time
 import sys
 
 elif choice == "7" or "log out":
-    print("Exiting")
+    print("G00DBYE")
     print(" ")
     print(".")
     time.sleep(1)
