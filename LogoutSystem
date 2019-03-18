@@ -1,8 +1,12 @@
 import time
+import sys
 
 elif choice == "7" or "log out":
+    print("Exiting")
+    print(" ")
     print(".")
     time.sleep(1)
     print(".")
     time.sleep(1)
     print(".")
+    sys.exit()
