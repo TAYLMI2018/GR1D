@@ -88,5 +88,5 @@ def mainmenu():
             mainmenu()
             
     elif choice == "7" or "log out":
-        print ("G00DBYE")
+        print ("G00DBYE") 
         sys.exit()
