@@ -22,7 +22,7 @@ def mainmenu():
     if choice == "1" or  "Personal Factfile":
         print ("Would you like to see your Personal Factfile?")
         print ("y/n")
-        input() = yesorno
+        yesorno = input()
         if yesorno == y:
             print ("Taking you to your Personal Factfile now")
             factfilefun()
@@ -280,3 +280,37 @@ def turtledrawing():
     if choiceforturtle == "A flower drawing service" or "3":
         print(turtledrawingcharlie)
 
+
+def turtledrawingcharlie():
+
+    import turtle
+
+    wn = turtle.Screen()
+    wn.bgcolor('black')
+
+    bob = turtle.Turtle()
+    bob.speed(0)
+    bob.color('yellow')
+    bob.width(2)
+
+    def flower():
+        for i in range(36):
+            square()
+            bob.left(10)
+
+    def square():
+        for i in range(4):
+            bob.forward(200)
+            bob.left(90)
+
+    def flower2():
+        for i in range(6):
+            bob.right(115)
+            flower()
+
+    flower2()
+
+    ##for i in range(360):
+    ##bob.left(1)
+
+    wn.exitonclick(
