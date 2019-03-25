@@ -8,4 +8,58 @@ def pathways():
   print(" It's your turn to challenge the HaylenGate dungeon.")
   print(" If successfully complete all the tests you will meet the final boss, the protector of HaylenGate, a Dragon.")
   print("")
+  print("You arrive at the East Gate")
+  print("")
+  time.sleep(1)
+  print("The time is 8.00am")
+  print("")
+  print("")
+  print("A cold breeze overwhelms your senses, your toes are numb and senseless")
+  print("You reach out to the Main East door of HaylenGate")
+  print("Do you dare to challenge HaylenGate?")
+  choice = input()
+  
+  elif choice = "yes" or "y":
+    print("You proceed to pull the frozen steel handle of the door")
+    print("The screams of past challengers fill your head as you enter")
+    print("The door slams behind you")
+    time.sleep(2)
+    print("There is no turning back")
+    print("")
+    print("As you continue you come across a choice")
+    print("There is a split path infront of you")
+    print("Will you take Path A or Path B")
+    
+    choice1 = input()
+    
+    elif choice1 = "path a" or "a":
+      print("You have chosen Path A")
+      time.sleep(2)
+      print("You come across a
+      
+      
+      
+      
+      
+      
+      
+      
+    elif choice1 = "path b" or "b":
+      print("You have chosen Path B")
+    
+    
+    
+    
+    
+    
+    
+  elif choice = "no" or "n":
+    print("You have decided to leave the challenge for another day")
+    time.sleep(5)
+    print("")
+    print("")
+    print("")
+    print("")
+    print("")
+    pathways()
   
