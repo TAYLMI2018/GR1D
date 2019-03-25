@@ -97,18 +97,19 @@ def mainmenu():
 def gamemenu():
     ghostgame()
 
-print("*****************************************")
-print("Menu:")
-print("Enter '1' to add two numbers")
-print("Enter '2' to subtract two numbers")
-print("Enter '3' to multiply two numbers")
-print("Enter '4' to divide two numbers")
-print("Enter '5' to power two numbers")
-print("Enter '6' to end the program")
-print("*****************************************")
-user_input = str(input())
-
 def Calculator():
+
+    print("*****************************************")
+    print("Menu:")
+    print("Enter '1' to add two numbers")
+    print("Enter '2' to subtract two numbers")
+    print("Enter '3' to multiply two numbers")
+    print("Enter '4' to divide two numbers")
+    print("Enter '5' to power two numbers")
+    print("Enter '6' to end the program")
+    print("*****************************************")
+    user_input = str(input())
+
 
     if user_input == "6":
             print ("quit") 
