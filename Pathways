@@ -1,0 +1,11 @@
+def pathways():
+  print("Welcome to Pathways")
+  print(" ")
+  time.sleep(3)
+  print("You are an adventurer") 
+  print("A free thinker")
+  print("A warrior")
+  print(" It's your turn to challenge the HaylenGate dungeon.")
+  print(" If successfully complete all the tests you will meet the final boss, the protector of HaylenGate, a Dragon.")
+  print("")
+  
