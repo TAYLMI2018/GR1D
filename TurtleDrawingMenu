@@ -7,10 +7,10 @@ def turtledrawing():
   choiceforturtle = input()
   
   if choiceforturtle == "Polygon/Syprograph Automatic Drawer" or "1":
-    print(turtledrawingben)
+    turtledrawingben():
   
   if choiceforturtle == "A DIY drawing service" or "2":
-    print(turtledrawingharry)
+    turtledrawingharry()
     
   if choiceforturtle == "A flower drawing service" or "3":
     print(turtledrawingcharlie)
