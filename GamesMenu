@@ -8,11 +8,13 @@ def gamemenu():
   print(" ")
   print("0R")
   print(" ")
-  print("Enter Game Name here, by Harry Brookes")
+  print("Pathways, by GR1D collectively")
   choice = input()
  
   elif choice == "ghost game" or "1":
     ghostgame()
     
-  elif choice == " COMPLETE THIS " or "2":
+  elif choice == "pathways" or "2":
+    pathways()
+  
   
