@@ -5,7 +5,9 @@ def gamemenu():
   print(" ")
   print("Your options are:")
   print("Ghost Game, made by Charlie Patterson")
+  print(" ")
   print("0R")
+  print(" ")
   print("Enter Game Name here, by Harry Brookes")
   choice = input()
  
