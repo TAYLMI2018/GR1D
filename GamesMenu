@@ -1,2 +1,15 @@
 def gamemenu():
-  ghostgame()
+  print("**********************")
+  print("Welcome to the Games Centre")
+  print("**********************")
+  print(" ")
+  print("Your options are:")
+  print("Ghost Game, made by Charlie Patterson")
+  print("0R")
+  print("Enter Game Name here, by Harry Brookes")
+  choice = input()
+ 
+  elif choice == "ghost game" or "1":
+    ghostgame()
+    
+  elif choice == " COMPLETE THIS "
