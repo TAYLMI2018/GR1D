@@ -1,0 +1,486 @@
+
+import sys
+import time
+import turtle
+
+def mainmenu():
+
+
+    
+    
+    
+    print ("Welcome to the GR1D menu")
+    print ("Please select the number of the function you would like to acess")
+    print ("1. Personal Factfile")
+    print ("2. Calculator")
+    print ("3. Turtle Drawing")
+    print ("4. Sleep Calculator")
+    print ("5. Games")
+    print ("6. Credits")
+    print ("7. Log Out of the GR1D")
+    print ("8. for the logo")
+    print ("Please input the function you would like")
+    choice = input()
+
+    if choice == "1" or  "Personal Factfile":
+        print ("Would you like to see your Personal Factfile?")
+        print ("y/n")
+        yesorno = input()
+        if yesorno == y:
+            print ("Taking you to your Personal Factfile now")
+            factfilefun()
+        elif yesorno == n:
+            print ("Taking you back to the main menu")
+            mainmenu()
+    
+    
+    elif choice == "2" or "Calculator":
+         print ("Would you like to access the Calculator?")
+         print ("y/n")
+         yesorno = input()
+         if yesorno == y:
+            print ("Taking you to the Calculator now")
+            Calculator()
+        elif yesorno == n:
+            print ("Taking you back to the main menu")
+            mainmenu()
+            
+            
+    elif choice == "3" or "Turtle Drawing":
+         print ("Would you like to access the Turtle Drawing?")
+         print ("y/n")
+         yesorno = input()
+         if yesorno == y:
+            print ("Taking you to the Turtle Drawing now")
+            Calculator()
+        elif yesorno == n:
+            print ("Taking you back to the main menu now")
+            mainmenu()
+
+    elif choice == "4" or "Sleep Calculator":
+         print ("Would you like to access the Sleep Calculator?")
+         print ("y/n")
+         yesorno = input()
+         if yesorno == y:
+            print ("Taking you to the Sleep Calculator now")
+            SleepCalculator()
+        elif yesorno == n:
+            print ("Taking you back to the main menu now")
+            mainmenu()
+           
+    elif choice == "5" or "Games":
+         print ("Would you like to access the Games Menu?")
+         print ("y/n")
+         yesorno = input()
+         if yesorno == y:
+            print ("Taking you to the Games Menu now")
+            gamemenu()
+        elif yesorno == n:
+            print ("Taking you back to the main menu now")
+            mainmenu()
+            
+    elif choice == "6" or "Credits":
+         print ("Would you like to access the Credits?")
+         print ("y/n")
+         yesorno = input()
+         if yesorno == y:
+            print ("Taking you to the Credits now")
+            Credits()
+        elif yesorno == n:
+            print ("Taking you back to the main menu now")
+            mainmenu()
+            
+    elif choice == "7" or "log out":
+        print ("G00DBYE") 
+        sys.exit()
+
+
+
+def gamemenu():
+    ghostgame()
+
+def Calculator():
+
+    print("*****************************************")
+    print("Menu:")
+    print("Enter '1' to add two numbers")
+    print("Enter '2' to subtract two numbers")
+    print("Enter '3' to multiply two numbers")
+    print("Enter '4' to divide two numbers")
+    print("Enter '5' to power two numbers")
+    print("Enter '6' to end the program")
+    print("*****************************************")
+    user_input = str(input())
+
+
+    if user_input == "6":
+            print ("quit") 
+
+    elif user_input == "1":
+            print ("Enter a number")
+            numb_1 = float(input())
+            print ("Enter another number")
+            numb_2 = float(input())
+            print (numb_1 ,"+", numb_2 ,"=")
+            print (numb_1 + numb_2)
+    
+    elif user_input == "2":
+            print ("Enter a number")
+            number_1 = float(input())
+            print ("Enter another number")
+            number_2 = float(input())
+            print (number_1 ,"-", number_2 ,"=")
+            print (number_1 - number_2)
+                       
+    elif user_input == "3":
+            print ("Enter a number")
+            numbe_1 = float(input())
+            print ("Enter another number")
+            numbe_2 = float(input())
+            print (numbe_1 ,"x", numbe_2 ,"=")
+            print (numbe_1 * numbe_2)
+    
+    elif user_input == "4":
+            print ("Enter a number")
+            num_1 = float(input())
+            print ("Enter another number")
+            num_2 = float(input())
+            print (num_1 ,"%", num_2 ,"=")
+            print (num_1 / num_2)
+    
+    elif user_input == "5":
+        print ("Enter a number you would like to power")
+        no_1 = float(input())
+        print ("Enter the power")
+        no_2 = float(input())
+        print(no_1, "to the power of", no_2, "=")
+        print(no_1 ** no_2)
+
+    else:
+            print("Unknown input")
+         
+            
+def Credits():
+
+    import time
+    print ("Created By - \n Harry Brookes")
+    print (" ")
+    time.sleep(1)
+    print ("Co-Produced By - \n Ben Leacock")
+    print (" ")
+    time.sleep(1)
+    print ("Turtle Guru - \n Sam Kerr")
+    print (" ")
+    time.sleep(1)
+    print ("Game Made By - \n Charlie Patterson")
+    print (" ")
+    time.sleep(1)
+    print (" Made On - \n Python 3.3 Idle")
+    print (" ")
+    time.sleep(1)
+    print ("All made by former computer science GCSE stidents")
+    
+def factfilefun():
+    global fullname
+    global firstname
+    global lastname
+    global age
+    global username
+    global middlename
+   
+    #declaring the fullname variable
+    fullname = firstname + " " + lastname
+
+   
+    #firstname, asks for fistname and inputs it to a variable
+    print("Hello, what is your firstname?")
+    firstname = input()
+
+    #lastname, asks for lastmane and inputs it to a variable#firstname, asks for fistname and inputs it to a variable
+    print("Hello, what is your firstname?")
+    firstname = input()
+
+    #lastname, asks for lastmane and inputs it to a variable    #creating username variable.
+    username = (lastname[0:4] + firstname[0:2] + str(len(lastname))) 
+
+  
+    #creating a factfile
+    #factfile = input()
+    #if factfile == "y":
+    print ("Here is your fact file")
+    print ("**********************")
+    print ("Intials:",firstname[0],lastname[0])
+    print ("Lastname:",lastname.upper())
+    print ("Firstname:",firstname.upper())
+    print ("Fullname:",fullname)
+    print ("Age:", age)
+    print ("The length of your fisrtname is:",len(firstname))
+    print ("The length of your lastname is:",len(lastname))
+
+    #telling the user their username
+    print ("Your username is:",username)
+    
+    
+    def Gr1d():
+    global username
+    valid = False
+
+    while valid == False:
+        print ("Welcome to the GR1D system")
+        print ("**************************")    
+        print ("Please enter your username")    
+        entrance = input()
+        
+        if entrance == username:
+            print("Access granted")
+            valid = True
+            mainmenu()
+        elif entrance == ("backdoor"):
+            print ("Access granted")
+            valid = True
+            mainmenu()
+            
+        else:
+            print ("Access denied")
+            print ("Please try again")
+            valid = False
+
+def SleepCalculator():
+
+    print("Sleep Calculator")
+    print("                     ")
+    print(firstname, "many hours do you sleep per night?")
+
+    hourspernight = int(input())
+
+    print("Less than 8 hours of sleep per night this can increase stress levels.")
+
+    hoursperweek = hourspernight * 7
+
+    print("You sleep",hoursperweek,"hours every week")
+    print(" ")
+
+    hourspermonth = hoursperweek * 4.35
+
+    print("You sleep",hourspermonth,"hours every month")
+    print(" ")
+
+    hoursperyear = hourspernight * 365
+
+    print ("You sleep",hoursperyear,"hours per year")
+    print(" ")
+
+def turtledrawing():
+    print("Would you like a :")
+    print("Polygon/Spyrograph Automatic Drawer = 1")
+    print("A DIY drawing service = 2")
+    print("A flower drawing service = 3")
+    print("Input the number of which you would like to do")
+    choiceforturtle = input()
+  
+    if choiceforturtle == "Polygon/Syprograph Automatic Drawer" or "1":
+        turtledrawingben():
+  
+    if choiceforturtle == "A DIY drawing service" or "2":
+        turtledrawingharry()
+    
+    if choiceforturtle == "A flower drawing service" or "3":
+        print(turtledrawingcharlie)
+
+
+def turtledrawingcharlie():
+
+    import turtle
+
+    wn = turtle.Screen()
+    wn.bgcolor('black')
+
+    bob = turtle.Turtle()
+    bob.speed(0)
+    bob.color('yellow')
+    bob.width(2)
+
+    def flower():
+        for i in range(36):
+            square()
+            bob.left(10)
+
+    def square():
+        for i in range(4):
+            bob.forward(200)
+            bob.left(90)
+
+    def flower2():
+        for i in range(6):
+            bob.right(115)
+            flower()
+
+    flower2()
+
+    ##for i in range(360):
+    ##bob.left(1)
+
+    wn.exitonclick(
+    
+def turtledrawingharry():
+
+    #Python Drawing Pad start
+
+    from turtle import TurtleScreen, RawTurtle, TK
+
+    root = TK.Tk()
+    canvas = TK.Canvas(root, width=500, height=500)
+    canvas.pack()
+    wn = TurtleScreen(canvas)
+    root.wm_title("Harry's Drawing Pad")
+    wn.bgcolor("orange") # Sets background colour to orange
+    turtle = RawTurtle(wn) # Defines the turtle
+    turtle.speed(0)
+
+    def up():
+        turtle.setheading(90)
+
+    def down():
+        turtle.setheading(270)
+
+    def left():
+        turtle.setheading(180)
+
+    def right():
+        turtle.setheading(0)
+
+    def forward():
+        turtle.forward(10)
+
+    def square():
+        for i in range(4):
+            turtle.forward(100)
+            turtle.left(90)
+
+    def triangle():
+        for i in range(3):
+            turtle.forward(100)
+        turtle.left(120)
+
+    def circle():
+        for i in range(36):
+            turtle.forward(20)
+            turtle.left(10)
+
+    def clear():
+        turtle.clear()
+
+    but1=TK.Button(text="UP", command=up)
+    but1.pack(side="top")
+
+    but2=TK.Button(text="DOWN", command=down)
+    but2.pack(side="bottom")
+
+    but3=TK.Button(text="LEFT", command=left)
+    but3.pack(side="left")
+
+    but4=TK.Button(text="RIGHT", command=right)
+    but4.pack(side="right")
+
+    but5=TK.Button(text="FORWARD", command=forward)
+    but5.pack(side="top")
+
+    but5=TK.Button(text="SQUARE", command=square)
+    but5.pack(side="top")
+
+    but6=TK.Button(text="TRIANGLE", command=triangle)
+    but6.pack(side="top")
+
+    but7=TK.Button(text="CIRCLE", command=circle)
+    but7.pack(side="top")
+
+    but7=TK.Button(text="CLEAR", command=clear)
+    but7.pack(side="top")
+
+
+    TK.mainloop()
+
+def turtledrawingben():
+
+    import turtle
+
+    wn = turtle.Screen()
+    wn.bgcolor("orange")
+
+    bob = turtle.Turtle()
+    bob.speed(0)
+    
+    def polygon():
+        for i in range(sides):
+            bob.forward(size)
+            bob.left(360/sides)
+
+
+    def spyrograph():
+        for i in range(48):
+            bob.forward(size)
+            bob.left(360/sides-1)
+
+
+    print ("Welcome to GR1D's Self Running Drawing Service")
+    print ("           ")
+    print ("Enter the shape for which you would like us to draw")
+    print ("Spyrograph - 1")
+    print ("Polygon - 2")
+    print ("                    ")
+
+    choicefordrawing = input()
+
+    if choicefordrawing == "Spyrograph" or "1" or "spyrograph":
+        sides = int(input("How many sides would you like?            "))
+        print("                ")
+        size = int(input("What size of Spyrograph           "))
+        print("                ")
+        print("We are going to start the process now")
+        print("**************")
+        spyrograph()
+
+    if choicefordrawing == "Polygon" or "2" or "syprograph:
+        sides = int(input("How many sides would you like?           "))
+        print("            ")
+        size = int(input("What size of Polygon            "))
+        print("              ")
+        print("We are going to start the process now")
+        print("**************")
+        polygon()
+   
+    else:
+        print("                                                    ")
+        print("Your choice is not a current function availiable please restart the process")
+
+#Your name
+
+#firstname, asks for fistname and inputs it to a variable
+print("Hello, what is your firstname?")
+firstname = input()
+
+#middlename, asks for middlename and inputs it to a variable
+print ("Hello,", firstname)
+print (firstname,", What is your middle name")
+middlename = input()
+print ("Hello,", firstname, middlename)
+
+#lastname, asks for lastnane and inputs it to a variable
+print (' ')
+print ("Hello,", firstname)
+print (firstname,", what is your last name")
+lastname = input()
+print ("Hello,", firstname, lastname)
+
+#age, asks for age and inputs it to a variable
+print (firstname, lastname,"what is your age")
+age = input()
+print ("So,", firstname, lastname,"you are,", age)
+runfactfile = input ("Create your factfile? (y/n)")
+if runfactfile == "y":
+    factfilefun()
+    Gr1d()
+else:
+    Gr1d()
+    
+username = (lastname[0:4] + firstname[0:2] + str(len(lastname)))
