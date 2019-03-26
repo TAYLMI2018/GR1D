@@ -1,3 +1,5 @@
+import time
+
 def pathways():
   print("Welcome to Pathways")
   print(" ")
@@ -19,7 +21,7 @@ def pathways():
   print("Do you dare to challenge HaylenGate?")
   choice = input()
   
-  elif choice = "yes" or "y":
+  elif choice = ("yes") or ("y"):
     print("You proceed to pull the frozen steel handle of the door")
     print("The screams of past challengers fill your head as you enter")
     print("The door slams behind you")
