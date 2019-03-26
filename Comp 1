@@ -36,7 +36,7 @@ def mainmenu():
     elif choice == "2" or "Calculator":
          print ("Would you like to access the Calculator?")
          print ("y/n")
-         input() = yesorno
+         yesorno = input()
          if yesorno == y:
             print ("Taking you to the Calculator now")
             Calculator()
@@ -48,7 +48,7 @@ def mainmenu():
     elif choice == "3" or "Turtle Drawing":
          print ("Would you like to access the Turtle Drawing?")
          print ("y/n")
-         input() = yesorno
+         yesorno = input()
          if yesorno == y:
             print ("Taking you to the Turtle Drawing now")
             Calculator()
@@ -59,7 +59,7 @@ def mainmenu():
     elif choice == "4" or "Sleep Calculator":
          print ("Would you like to access the Sleep Calculator?")
          print ("y/n")
-         input() = yesorno
+         yesorno = input()
          if yesorno == y:
             print ("Taking you to the Sleep Calculator now")
             SleepCalculator()
@@ -70,7 +70,7 @@ def mainmenu():
     elif choice == "5" or "Games":
          print ("Would you like to access the Games Menu?")
          print ("y/n")
-         input() = yesorno
+         yesorno = input()
          if yesorno == y:
             print ("Taking you to the Games Menu now")
             gamemenu()
@@ -81,7 +81,7 @@ def mainmenu():
     elif choice == "6" or "Credits":
          print ("Would you like to access the Credits?")
          print ("y/n")
-         input() = yesorno
+         yesorno = input()
          if yesorno == y:
             print ("Taking you to the Credits now")
             Credits()
