@@ -93,9 +93,17 @@ def mainmenu():
     elif choice == ("7") or ("log out"):
         print ("G00DBYE") 
         sys.exit()
+    
     elif choice = ("8") or ("logo"):
-        print ("taking you to the logo now")
-        logo()
+        print ("Would you like to access the Logo")
+        print ("y/n")
+        yesorno = input()
+        if yesorno == ("y"):
+            print ("taking you to the logo now")
+            logo()
+        elif yesorno == ("n"):
+            print ("taking you to the main menu")
+            mainmenu()
 
 
 def gamemenu():
