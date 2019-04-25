@@ -37,7 +37,8 @@ def pathways():
     elif choice1 = "path a" or "a":
       print("You have chosen Path A")
       time.sleep(2)
-      print("You come across a
+      print("You come across a room with three different couloured chests in,")
+      print("one is orange, one is black, and one is blue.")
       
       
       
