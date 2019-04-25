@@ -29,7 +29,7 @@ def pathways():
     print("There is no turning back")
     print("")
     print("As you continue you come across a choice")
-    print("There is a split path infront of you")
+    print("There is a split in the path infront of you")
     print("Will you take Path A or Path B")
     
     choice1 = input()
@@ -37,8 +37,20 @@ def pathways():
     elif choice1 = "path a" or "a":
       print("You have chosen Path A")
       time.sleep(2)
-      print("You come across a room with three different couloured chests in,")
-      print("one is orange, one is black, and one is blue.")
+      print("You come across a dark room, with three different couloured chests in,")
+      print("One is orange, one is black, and one is blue.")
+      print("Each Chest has a different magical item in")
+      print("Which chest will you chose?") 
+      Chest = input()
+      
+      if Chest = "orange" or "Orange":
+        print("You have found the Flaming Staff")
+        print("This is a Magical Weapon of great power")
+        print("It can be used to great effect against enimies of nature or enimies of flesh")
+        Primary = Flaming Staff
+      
+        
+      
       
       
       
