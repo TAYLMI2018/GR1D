@@ -52,7 +52,7 @@ def mainmenu():
          if yesorno == y:
             print ("Taking you to the Turtle Drawing now")
             Calculator()
-        elif yesorno == n:
+         elif yesorno == n:
             print ("Taking you back to the main menu now")
             mainmenu()
 
@@ -63,7 +63,7 @@ def mainmenu():
          if yesorno == y:
             print ("Taking you to the Sleep Calculator now")
             SleepCalculator()
-        elif yesorno == n:
+         elif yesorno == n:
             print ("Taking you back to the main menu now")
             mainmenu()
            
