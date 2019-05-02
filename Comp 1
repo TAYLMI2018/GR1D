@@ -19,8 +19,9 @@ def mainmenu():
     print ("7. Log Out of the GR1D")
     print ("Please input the function you would like")
     choice = input()
+    print (choice)
 
-    if choice == "1" or  "Personal Factfile":
+    if choice == "1" :
         print ("Would you like to see your Personal Factfile?")
         print ("y/n")
         yesorno = input()
@@ -32,7 +33,7 @@ def mainmenu():
             mainmenu()
     
     
-    elif choice == "2" or "Calculator":
+    if choice == "2":
          print ("Would you like to access the Calculator?")
          print ("y/n")
          yesorno = input()
@@ -44,7 +45,7 @@ def mainmenu():
             mainmenu()
             
             
-    elif choice == "3" or "Turtle Drawing":
+    if choice == "3":
          print ("Would you like to access the Turtle Drawing?")
          print ("y/n")
          yesorno = input()
@@ -55,7 +56,7 @@ def mainmenu():
             print ("Taking you back to the main menu now")
             mainmenu()
 
-    elif choice == "4" or "Sleep Calculator":
+    if choice == "4":
          print ("Would you like to access the Sleep Calculator?")
          print ("y/n")
          yesorno = input()
@@ -66,7 +67,7 @@ def mainmenu():
             print ("Taking you back to the main menu now")
             mainmenu()
            
-    elif choice == "5" or "Games":
+    if choice == "5":
          print ("Would you like to access the Games Menu?")
          print ("y/n")
          yesorno = input()
@@ -77,7 +78,7 @@ def mainmenu():
             print ("Taking you back to the main menu now")
             mainmenu()
             
-    elif choice == "6" or "Credits":
+    if choice == "6":
          print ("Would you like to access the Credits?")
          print ("y/n")
          yesorno = input()
@@ -88,7 +89,7 @@ def mainmenu():
             print ("Taking you back to the main menu now")
             mainmenu()
             
-    elif choice == "7" or "log out":
+    if choice == "7":
         print ("G00DBYE") 
         sys.exit()
 
@@ -469,5 +470,3 @@ else:
     Gr1d()
     
 username = (lastname[0:4] + firstname[0:2] + str(len(lastname)))
-
-
