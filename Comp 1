@@ -1,4 +1,3 @@
-
 import sys
 import time
 import turtle
@@ -25,10 +24,10 @@ def mainmenu():
         print ("Would you like to see your Personal Factfile?")
         print ("y/n")
         yesorno = input()
-        if yesorno == y:
+        if yesorno == "y":
             print ("Taking you to your Personal Factfile now")
             factfilefun()
-        elif yesorno == n:
+        elif yesorno == "n":
             print ("Taking you back to the main menu")
             mainmenu()
     
@@ -37,10 +36,10 @@ def mainmenu():
          print ("Would you like to access the Calculator?")
          print ("y/n")
          yesorno = input()
-         if yesorno == y:
+         if yesorno == "y":
             print ("Taking you to the Calculator now")
             Calculator()
-         elif yesorno == n:
+         elif yesorno == "n":
             print ("Taking you back to the main menu")
             mainmenu()
             
@@ -49,10 +48,10 @@ def mainmenu():
          print ("Would you like to access the Turtle Drawing?")
          print ("y/n")
          yesorno = input()
-         if yesorno == y:
+         if yesorno == "y":
             print ("Taking you to the Turtle Drawing now")
             Calculator()
-         elif yesorno == n:
+         elif yesorno == "n":
             print ("Taking you back to the main menu now")
             mainmenu()
 
@@ -60,10 +59,10 @@ def mainmenu():
          print ("Would you like to access the Sleep Calculator?")
          print ("y/n")
          yesorno = input()
-         if yesorno == y:
+         if yesorno == "y":
             print ("Taking you to the Sleep Calculator now")
             SleepCalculator()
-         elif yesorno == n:
+         elif yesorno == "n":
             print ("Taking you back to the main menu now")
             mainmenu()
            
@@ -71,10 +70,10 @@ def mainmenu():
          print ("Would you like to access the Games Menu?")
          print ("y/n")
          yesorno = input()
-         if yesorno == y:
+         if yesorno == "y":
             print ("Taking you to the Games Menu now")
             gamemenu()
-         elif yesorno == n:
+         elif yesorno == "n":
             print ("Taking you back to the main menu now")
             mainmenu()
             
@@ -82,10 +81,10 @@ def mainmenu():
          print ("Would you like to access the Credits?")
          print ("y/n")
          yesorno = input()
-         if yesorno == y:
+         if yesorno == "y":
             print ("Taking you to the Credits now")
             Credits()
-         elif yesorno == n:
+         elif yesorno == "n":
             print ("Taking you back to the main menu now")
             mainmenu()
             
@@ -190,14 +189,6 @@ def factfilefun():
     #declaring the fullname variable
     fullname = firstname + " " + lastname
 
-   
-    #firstname, asks for fistname and inputs it to a variable
-    print("Hello, what is your firstname?")
-    firstname = input()
-
-    #lastname, asks for lastmane and inputs it to a variable#firstname, asks for fistname and inputs it to a variable
-    print("Hello, what is your firstname?")
-    firstname = input()
 
     #lastname, asks for lastmane and inputs it to a variable    #creating username variable.
     username = (lastname[0:4] + firstname[0:2] + str(len(lastname))) 
@@ -220,29 +211,29 @@ def factfilefun():
     print ("Your username is:",username)
     
     
-    def Gr1d():
-        global username
-        valid = False
+def Gr1d():
+    global username
+    valid = False
+    
+    while valid == False:
+        print ("Welcome to the GR1D system")
+        print ("**************************")    
+        print ("Please enter your username")    
+        entrance = input()
 
-        while valid == False:
-            print ("Welcome to the GR1D system")
-            print ("**************************")    
-            print ("Please enter your username")    
-            entrance = input()
+        if entrance == username:
+            print("Access granted")
+            valid = True
+            mainmenu()
+        elif entrance == ("backdoor"):
+            print ("Access granted")
+            valid = True
+            mainmenu()
 
-            if entrance == username:
-                print("Access granted")
-                valid = True
-                mainmenu()
-            elif entrance == ("backdoor"):
-                print ("Access granted")
-                valid = True
-                mainmenu()
-
-            else:
-                print ("Access denied")
-                print ("Please try again")
-                valid = False
+        else:
+            print ("Access denied")
+            print ("Please try again")
+            valid = False
 
 def SleepCalculator():
 
@@ -278,7 +269,7 @@ def turtledrawing():
     choiceforturtle = input()
   
     if choiceforturtle == "Polygon/Syprograph Automatic Drawer" or "1":
-        turtledrawingben():
+        turtledrawingben()
   
     if choiceforturtle == "A DIY drawing service" or "2":
         turtledrawingharry()
@@ -319,7 +310,7 @@ def turtledrawingcharlie():
     ##for i in range(360):
     ##bob.left(1)
 
-    wn.exitonclick(
+    wn.exitonclick()
     
 def turtledrawingharry():
 
@@ -439,7 +430,7 @@ def turtledrawingben():
         print("**************")
         spyrograph()
 
-    if choicefordrawing == "Polygon" or "2" or "syprograph:
+    if choicefordrawing == "Polygon" or "2" or "syprograph":
         sides = int(input("How many sides would you like?           "))
         print("            ")
         size = int(input("What size of Polygon            "))
@@ -478,6 +469,5 @@ else:
     Gr1d()
     
 username = (lastname[0:4] + firstname[0:2] + str(len(lastname)))
-
 
 
