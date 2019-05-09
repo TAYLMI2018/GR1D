@@ -177,7 +177,7 @@ def Credits():
     print (" Made On - \n Python 3.3 Idle")
     print (" ")
     time.sleep(1)
-    print ("All made by former computer science GCSE stidents")
+    print ("All made by former computer science GCSE students")
     
 def factfilefun():
     global fullname
@@ -235,7 +235,7 @@ def Gr1d():
             print ("Access denied")
             print ("Please try again")
             valid = False
-
+            Gr1d()
 def SleepCalculator():
 
     print("Sleep Calculator")
