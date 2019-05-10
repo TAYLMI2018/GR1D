@@ -1,1 +1,6 @@
 def warframe():
+  import time
+  
+  print("Welcome to the Warframe GR1D")
+  
+  
