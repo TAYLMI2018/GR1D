@@ -8,5 +8,6 @@ def warframe():
   print(" ")
   time.sleep(1)
   print("We are here to assist you /n in your conquest for balance")
-  
+  print("  ")
+  print("What do you require operator")
   
