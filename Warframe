@@ -10,4 +10,10 @@ def warframe():
   print("We are here to assist you /n in your conquest for balance")
   print("  ")
   print("What do you require, operator?")
+  print("  ")
+  print("  ")
+  print("  ")
+  print("  ")
+  print(
+  
   
