@@ -1,0 +1,105 @@
+def(Ghost Game):
+
+#Ghost Game Alpha 1.0
+
+import random
+import time
+
+print('Ghost Game')
+print( ' ' )
+print('Alpha 1.0')
+time.sleep(1)
+print ( ' ' )
+print('Created by Charlie Patterson on 12/1/2019')
+time.sleep(1)
+print( ' ' )
+print(' Supported by Gr1d')
+time.sleep(3)
+
+print( ' ' )
+print( ' ' )
+
+
+print('Welcome to Ghost Game! Your challenge is to make it through as many doors as you \npossibly can before getting caught by the ghost.')
+print( ' ' )
+print(' (Please dont type anything until the game has loaded!)')
+
+time.sleep(2)
+
+usernumb = 0
+ghostnumber = 10
+score = 0
+level = 1
+
+while usernumb != ghostnumber:
+    ghostnumber = random.randint(1,3)
+    print( ' ' )
+    print( ' ' )
+    print('^^^^^^^')
+
+    print('LEVEL', level)
+    
+    print('^^^^^^^')
+    time.sleep(2)
+
+
+    print( ' ' )
+    print('You have come across 3 doors. choose door 1 to 3 to survive.')
+    
+    usernumb = int(input())
+    
+    print ("You have chosen door number " , usernumb)
+    print( ' ' )
+    time.sleep(1)
+    
+    print("Ghost is behind...")
+    time.sleep(2)
+    print( ' ' )
+    print('Door', ghostnumber)
+
+    time.sleep(1)
+    
+    if usernumb == ghostnumber:
+        print( ' ' )
+        print('OH NO! You found the Ghost! at least the ghost is not hungry anymore! Game Over!')
+        print( ' ' )
+        time.sleep(1)
+        print('the Ghost says. HA HA HA! You cannot fool me, I have eaten many humans \nwho try & outsmart me but none of them can. >:]')
+        print( ' ' )
+        time.sleep(2)   
+        print ("Your final score is " , score)
+        time.sleep(1)
+        print('You survived till level' , level)
+            
+        
+    else:
+        print( ' ' )
+        print('Phew! your are safe. no dinner for the Ghost this time.')
+        time.sleep(1)
+        score = score + 1
+        level = level + 1
+        print ( ' ' )
+        time.sleep(1)
+        print ("Your score is " , score)
+        print ( ' ' )
+        time.sleep(1)
+      
+
+    if level == 5:
+        score = score + random.randint(-1,4)
+
+    if level == 10:
+        score = score + random.randint(-2,8)
+
+    if level == 15:
+        score = score + random.randint (-4,12)
+
+    if level == 20:
+        score = score + random.randint (-8,16)
+
+    if level == 25:
+        score = score + random.randint (-12,24)
+
+    if level == 30:
+        score = score + random.randint (-24,48)
+      
