@@ -9,13 +9,23 @@ def warframe():
   time.sleep(1)
   print("We are here to assist you /n in your conquest for balance")
   print("  ")
-  print("What do you require, operator?")
+  print("Please share my knowledge, for the systems safety")
   print("  ")
   print("  ")
   print("  ")
-  print("  ")
-  print("")
-  
+  print("**************************************************************************")
+  print ("How may I be of assistance, operator?")
+    print ("Please select the number of the asset you would like to access")
+    print ("1. Weapon stats and Advice")
+    print ("2. Stat and Build Calculator")
+    print ("3. Guides on Syndicates")
+    print ("4. Frame guides")
+    print ("5. Farming Guides")
+    print ("6. Credits")
+    print ("7. Log Out of the GR1D")
+    print ("Please input the function you would like")
+    choice = input()
+    print (choice)
   
   
   
