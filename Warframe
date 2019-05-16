@@ -37,6 +37,22 @@ def warframe():
         elif yesorno == "n":
             print ("Taking you back to the main menu")
             mainmenu()
+            
+            
+             if choice == "6":
+         print ("Would you like to access the Credits?")
+         print ("y/n")
+         yesorno = input()
+         if yesorno == "y":
+            print ("Taking you to the Credits now")
+            Credits()
+         elif yesorno == "n":
+            print ("Taking you back to the main menu now")
+            mainmenu()
+            
+    if choice == "7":
+        print ("G00DBYE") 
+        sys.exit()
   
   
   
