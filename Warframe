@@ -21,34 +21,69 @@ def warframe():
     print ("3. Guides on Syndicates")
     print ("4. Frame guides")
     print ("5. Farming Guides")
-    print ("6. Credits")
+    print ("6. Return to the GR1D menu")
     print ("7. Log Out of the GR1D")
     print ("Please input the function you would like")
     wchoice = input()
     print (wchoice)
     
     if choice == "1" :
-        print ("Would you like to see your Personal Factfile?")
+        print ("Would you like to go to Weapon stats and Advice?")
         print ("y/n")
-        yesorno = input()
-        if yesorno == "y":
-            print ("Taking you to your Personal Factfile now")
-            factfilefun()
-        elif yesorno == "n":
-            print ("Taking you back to the main menu")
-            mainmenu()
+        goto = input()
+        if goto == "y":
+            print ("Taking you to Weapon stats and Advice now")
+            wstats()
+        elif goto == "n":
+            print ("Taking you back to the Warframe menu")
+            warframe()
+      
+      
+      
+      
+    if choice == "1" :
+        print ("Would you like to go to Weapon stats and Advice?")
+        print ("y/n")
+        goto = input()
+        if goto == "y":
+            print ("Taking you to Weapon stats and Advice now")
+            wstats()
+        elif goto == "n":
+            print ("Taking you back to the Warframe menu")
+            warframe()       
             
-            
-             if choice == "6":
-         print ("Would you like to access the Credits?")
+     if choice == "1" :
+        print ("Would you like to go to Weapon stats and Advice?")
+        print ("y/n")
+        goto = input()
+        if goto == "y":
+            print ("Taking you to Weapon stats and Advice now")
+            wstats()
+        elif goto == "n":
+            print ("Taking you back to the Warframe menu")
+            warframe()                
+             
+       if choice == "1" :
+        print ("Would you like to go to Weapon stats and Advice?")
+        print ("y/n")
+        goto = input()
+        if goto == "y":
+            print ("Taking you to Weapon stats and Advice now")
+            wstats()
+        elif goto == "n":
+            print ("Taking you back to the Warframe menu")
+            warframe()                
+                         
+    if choice == "6":
+         print ("Would you like to Return to the main menu?")
          print ("y/n")
-         yesorno = input()
-         if yesorno == "y":
-            print ("Taking you to the Credits now")
-            Credits()
-         elif yesorno == "n":
-            print ("Taking you back to the main menu now")
+         goto = input()
+         if goto == "y":
+            print ("Taking you to the main menu now")
             mainmenu()
+         elif goto == "n":
+            print ("Taking you back to the Warframe menu now")
+            warframe()
             
     if choice == "7":
         print ("G00DBYE") 
