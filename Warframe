@@ -24,6 +24,7 @@ def warframe():
     print ("6. Return to the GR1D menu")
     print ("7. Log Out of the GR1D")
     print ("Please input the function you would like")
+    print("**************************************************************************")
     wchoice = input()
     print (wchoice)
     
