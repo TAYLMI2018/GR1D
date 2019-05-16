@@ -26,6 +26,17 @@ def warframe():
     print ("Please input the function you would like")
     wchoice = input()
     print (wchoice)
+    
+    if choice == "1" :
+        print ("Would you like to see your Personal Factfile?")
+        print ("y/n")
+        yesorno = input()
+        if yesorno == "y":
+            print ("Taking you to your Personal Factfile now")
+            factfilefun()
+        elif yesorno == "n":
+            print ("Taking you back to the main menu")
+            mainmenu()
   
   
   
