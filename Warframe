@@ -24,8 +24,8 @@ def warframe():
     print ("6. Credits")
     print ("7. Log Out of the GR1D")
     print ("Please input the function you would like")
-    choice = input()
-    print (choice)
+    wchoice = input()
+    print (wchoice)
   
   
   
