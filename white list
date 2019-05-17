@@ -3,11 +3,6 @@ import time
 import turtle
 
 def mainmenu():
-
-
-    
-    
-    
     print ("Welcome to the GR1D menu")
     print ("Please select the number of the function you would like to acess")
     print ("1. Personal Factfile")
@@ -211,31 +206,38 @@ def factfilefun():
     #telling the user their username
     print ("Your username is:",username)
     
-    
+
 def Gr1d():
     global username
     valid = False
-    
     while valid == False:
         print ("Welcome to the GR1D system")
         print ("**************************")    
         print ("Please enter your username")    
         entrance = input()
-
         if entrance == username:
             print("Access granted")
             valid = True
             mainmenu()
-        elif entrance == ("backdoor"):
-            print ("Access granted")
-            valid = True
-            mainmenu()
-
+        if entrance == ("day boy"):
+            print ("what is your username?")
+            username = input()
+            if username == ("brooha7"):
+                grid2()
+            elif username == ("kerrsa4"):
+                grid2()
+            elif username == ("leacbe7"):
+                grid2()
+            elif username == ("pattch9"):
+                grid2()
+                valid = True
+                
         else:
             print ("Access denied")
             print ("Please try again")
             valid = False
             Gr1d()
+
 def SleepCalculator():
 
     print("Sleep Calculator")
@@ -443,18 +445,10 @@ def turtledrawingben():
     else:
         print("                                                    ")
         print("Your choice is not a current function availiable please restart the process")
-def grid2():
-    import sys
-import time
-import turtle
-
-def mainmenu():
 
 
-    
-    
-    
-    print ("Welcome to the GR1D menu")
+def grid2():    
+    print ("Welcome to the whitelist Menu")
     print ("Please select the number of the function you would like to acess")
     print ("1. Personal Factfile")
     print ("2. Calculator")
@@ -462,7 +456,9 @@ def mainmenu():
     print ("4. Sleep Calculator")
     print ("5. Games")
     print ("6. Credits")
-    print ("7. Log Out of the GR1D")
+    print ("7. Log Out of the whitelist")
+    print ("8. view your weekly action")
+    print ("9. leaderboards")
     print ("Please input the function you would like")
     choice = input()
     print (choice)
@@ -476,7 +472,7 @@ def mainmenu():
             factfilefun()
         elif yesorno == "n":
             print ("Taking you back to the main menu")
-            mainmenu()
+            teleporter()
     
     
     if choice == "2":
@@ -488,7 +484,7 @@ def mainmenu():
             Calculator()
          elif yesorno == "n":
             print ("Taking you back to the main menu")
-            mainmenu()
+            teleporter()
             
             
     if choice == "3":
@@ -500,7 +496,7 @@ def mainmenu():
             turtledrawing()
          elif yesorno == "n":
             print ("Taking you back to the main menu now")
-            mainmenu()
+            teleporter()
 
     if choice == "4":
          print ("Would you like to access the Sleep Calculator?")
@@ -511,7 +507,7 @@ def mainmenu():
             SleepCalculator()
          elif yesorno == "n":
             print ("Taking you back to the main menu now")
-            mainmenu()
+            teleporter()
            
     if choice == "5":
          print ("Would you like to access the Games Menu?")
@@ -522,7 +518,7 @@ def mainmenu():
             gamemenu()
          elif yesorno == "n":
             print ("Taking you back to the main menu now")
-            mainmenu()
+            teleporter()
             
     if choice == "6":
          print ("Would you like to access the Credits?")
@@ -533,13 +529,151 @@ def mainmenu():
             Credits()
          elif yesorno == "n":
             print ("Taking you back to the main menu now")
-            mainmenu()
+            teleporter()
             
     if choice == "7":
-        print ("G00DBYE") 
+        print ("G00DBYE", firstname) 
         sys.exit()
 
+    if choice == "8":
+        print ("would you like to view your weekly action?")
+        print ("y/n")
+        yesorno = input()
+        if yesorno == "y":
+            print ("Taking you to the weekly action report now")
+            weeklyaction()
+        elif yesorno == "n":
+            print ("Taking you back to the main menu now")
+            teleporter()
 
+    if choice == ("9"):
+        print ("would you like to enter the leaderboards")
+        print ("y/n")
+        yesorno = input()
+        if yesorno == "y":
+            print ("taking you to the leaderboards")
+            editing()
+        elif yesorno == "n":
+            print ("Taking you back to the whitelist now")
+            teleporter()
+            
+
+
+def weeklyaction():
+    print ("your team have accesed the GR1D for one hour on Monday the 13th of May, from 2:05 to 3:05")
+    print ("taking you back to the whitelist")
+    grid2()
+
+
+
+def editing():
+    print ("here are the leaderboards")
+    time.sleep(1)
+    print ("Harry Brookes - 2,050++ and 871--")
+    print ("Ben Leacock - 844++ and 460 --")
+    print ("Sam Kerr - 2,319++ and 675--")
+    print ("Charlie Patterson - 314++ and 212--")
+    grid2()
+
+def teleporter():
+    print ("hello, I am the personal teleporter who will get you to the location that you would like.")
+    time.sleep(1)
+    print ("enter the number of the function in which you would like to access")
+    choice = input()
+    if choice == "1" :
+        print ("Would you like to see your Personal Factfile?")
+        print ("y/n")
+        yesorno = input()
+        if yesorno == "y":
+            print ("Taking you to your Personal Factfile now")
+            factfilefun()
+        elif yesorno == "n":
+            print ("Taking you back to the main menu")
+            teleporter()
+    
+    
+    if choice == "2":
+         print ("Would you like to access the Calculator?")
+         print ("y/n")
+         yesorno = input()
+         if yesorno == "y":
+            print ("Taking you to the Calculator now")
+            Calculator()
+         elif yesorno == "n":
+            print ("Taking you back to the main menu")
+            teleporter()
+            
+            
+    if choice == "3":
+         print ("Would you like to access the Turtle Drawing?")
+         print ("y/n")
+         yesorno = input()
+         if yesorno == "y":
+            print ("Taking you to the Turtle Drawing now")
+            turtledrawing()
+         elif yesorno == "n":
+            print ("Taking you back to the main menu now")
+            teleporter()
+
+    if choice == "4":
+         print ("Would you like to access the Sleep Calculator?")
+         print ("y/n")
+         yesorno = input()
+         if yesorno == "y":
+            print ("Taking you to the Sleep Calculator now")
+            SleepCalculator()
+         elif yesorno == "n":
+            print ("Taking you back to the main menu now")
+            teleporter()
+           
+    if choice == "5":
+         print ("Would you like to access the Games Menu?")
+         print ("y/n")
+         yesorno = input()
+         if yesorno == "y":
+            print ("Taking you to the Games Menu now")
+            gamemenu()
+         elif yesorno == "n":
+            print ("Taking you back to the main menu now")
+            teleporter()
+            
+    if choice == "6":
+         print ("Would you like to access the Credits?")
+         print ("y/n")
+         yesorno = input()
+         if yesorno == "y":
+            print ("Taking you to the Credits now")
+            Credits()
+         elif yesorno == "n":
+            print ("Taking you back to the main menu now")
+            teleporter()
+            
+    if choice == "7":
+        print ("G00DBYE", firstname) 
+        sys.exit()
+
+    if choice == "8":
+        print ("would you like to view your weekly action?")
+        print ("y/n")
+        yesorno = input()
+        if yesorno == "y":
+            print ("Taking you to the weekly action report now")
+            weeklyaction()
+        elif yesorno == "n":
+            print ("Taking you back to the main menu now")
+            teleporter()
+
+    if choice == ("9"):
+        print ("would you like to enter the leaderboards")
+        print ("y/n")
+        yesorno = input()
+        if yesorno == "y":
+            print ("taking you to the leaderboards")
+            editing()
+        elif yesorno == "n":
+            print ("Taking you back to the whitelist now")
+            teleporter()
+               
 
 def gamemenu():
     ghostgame()
@@ -611,7 +745,7 @@ def Credits():
     print ("Created By - \n Harry Brookes")
     print (" ")
     time.sleep(1)
-    print ("Co-Produced By - \n Ben Leacock")
+    print ("Co-Produced By - \n Ben Peacock")
     print (" ")
     time.sleep(1)
     print ("Turtle Guru - \n Sam Kerr")
@@ -658,30 +792,7 @@ def factfilefun():
     print ("Your username is:",username)
     
     
-def Gr1d():
-    global username
-    valid = False
-    
-    while valid == False:
-        print ("Welcome to the GR1D system")
-        print ("**************************")    
-        print ("Please enter your username")    
-        entrance = input()
 
-        if entrance == username:
-            print("Access granted")
-            valid = True
-            mainmenu()
-        elif entrance == ("backdoor"):
-            print ("Access granted")
-            valid = True
-            mainmenu()
-
-        else:
-            print ("Access denied")
-            print ("Please try again")
-            valid = False
-            Gr1d()
 def SleepCalculator():
 
     print("Sleep Calculator")
@@ -889,6 +1000,7 @@ def turtledrawingben():
     else:
         print("                                                    ")
         print("Your choice is not a current function availiable please restart the process")
+
 
 #Your name
 
@@ -912,56 +1024,11 @@ runfactfile = input ("Create your factfile? (y/n)")
 if runfactfile == "y":
     factfilefun()
     Gr1d()
+elif runfactfile == "n":
+    Gr1d()
+
 else:
-    Gr1d()
-    
-username = (lastname[0:4] + firstname[0:2] + str(len(lastname)))
-
-def whitelist():
-    print ("please enter the password")
-    password = input()
-    if password == ("GR1D"):
-        print ("Welcome back")
-        print ("please enter your username")
-        nameuser = input()
-        if nameuser == ("brooha7"):
-            print ("welcome to the whitelist")
-            grid2()
-        elif nameuser == ("kerrsa4"):
-            print ("welcome to the whitelist")
-            grid2()
-        elif nameuser == ("leacbe7"):
-            print ("welcome to the whitelist")
-            grid2()
-        elif nameuser == ("pattch9"):
-            print ("welcome to the whitelist")
-            grid2()
-#Your name
-
-#firstname, asks for fistname and inputs it to a variable
-print("Hello, what is your firstname?")
-firstname = input()
-
-
-#lastname, asks for lastnane and inputs it to a variable
-print (' ')
-print ("Hello,", firstname)
-print (firstname,", what is your last name")
-lastname = input()
-print ("Hello,", firstname, lastname)
-
-#age, asks for age and inputs it to a variable
-print (firstname, lastname,"what is your age")
-age = input()
-print ("So,", firstname, lastname,"you are,", age)
-runfactfile = input ("Create your factfile? (y/n) or go to the whitelist by pressing '1'")
-if runfactfile == "y":
-    factfilefun()
-    Gr1d()
-elif runfactfile == ("1"):
-    whitelist()
-else:
-    Gr1d()
+    print ("please start again")
     
 username = (lastname[0:4] + firstname[0:2] + str(len(lastname)))
 
