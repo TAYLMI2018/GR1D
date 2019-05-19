@@ -445,11 +445,11 @@ def turtledrawingben():
     else:
         print("                                                    ")
         print("Your choice is not a current function availiable please restart the process")
-
+####################################################################################
 
 def grid2():    
-    print ("Welcome to the whitelist Menu")
-    print ("Please select the number of the function you would like to acess")
+    print ("Welcome to the whitelist Menu", username)
+    print ("Please select the number of the function you would like to acess, knowing that after you use the turtle options you will have to restart the program.")
     print ("1. Personal Factfile")
     print ("2. Calculator")
     print ("3. Turtle Drawing")
@@ -459,6 +459,7 @@ def grid2():
     print ("7. Log Out of the whitelist")
     print ("8. view your weekly action")
     print ("9. leaderboards")
+    print ("0. teleporter")
     print ("Please input the function you would like")
     choice = input()
     print (choice)
@@ -471,7 +472,6 @@ def grid2():
             print ("Taking you to your Personal Factfile now")
             factfilefun()
         elif yesorno == "n":
-            print ("Taking you back to the main menu")
             teleporter()
     
     
@@ -483,7 +483,6 @@ def grid2():
             print ("Taking you to the Calculator now")
             Calculator()
          elif yesorno == "n":
-            print ("Taking you back to the main menu")
             teleporter()
             
             
@@ -495,7 +494,6 @@ def grid2():
             print ("Taking you to the Turtle Drawing now")
             turtledrawing()
          elif yesorno == "n":
-            print ("Taking you back to the main menu now")
             teleporter()
 
     if choice == "4":
@@ -506,7 +504,6 @@ def grid2():
             print ("Taking you to the Sleep Calculator now")
             SleepCalculator()
          elif yesorno == "n":
-            print ("Taking you back to the main menu now")
             teleporter()
            
     if choice == "5":
@@ -517,7 +514,6 @@ def grid2():
             print ("Taking you to the Games Menu now")
             gamemenu()
          elif yesorno == "n":
-            print ("Taking you back to the main menu now")
             teleporter()
             
     if choice == "6":
@@ -528,7 +524,6 @@ def grid2():
             print ("Taking you to the Credits now")
             Credits()
          elif yesorno == "n":
-            print ("Taking you back to the main menu now")
             teleporter()
             
     if choice == "7":
@@ -543,7 +538,6 @@ def grid2():
             print ("Taking you to the weekly action report now")
             weeklyaction()
         elif yesorno == "n":
-            print ("Taking you back to the main menu now")
             teleporter()
 
     if choice == ("9"):
@@ -554,7 +548,16 @@ def grid2():
             print ("taking you to the leaderboards")
             editing()
         elif yesorno == "n":
-            print ("Taking you back to the whitelist now")
+            teleporter()
+
+    if choice == ("0"):
+        print ("would you like to go to the teleporter")
+        print ("y/n")
+        yesorno = input()
+        if yesorno == "y":
+            print ("taking you to the teleporter")
+            teleporter()
+        elif yesorno == "n":
             teleporter()
             
 
@@ -562,7 +565,7 @@ def grid2():
 def weeklyaction():
     print ("your team have accesed the GR1D for one hour on Monday the 13th of May, from 2:05 to 3:05")
     print ("taking you back to the whitelist")
-    grid2()
+    teleporter()
 
 
 
@@ -573,7 +576,7 @@ def editing():
     print ("Ben Leacock - 844++ and 460 --")
     print ("Sam Kerr - 2,319++ and 675--")
     print ("Charlie Patterson - 314++ and 212--")
-    grid2()
+    teleporter()
 
 def teleporter():
     print ("hello, I am the personal teleporter who will get you to the location that you would like.")
@@ -600,7 +603,6 @@ def teleporter():
             print ("Taking you to the Calculator now")
             Calculator()
          elif yesorno == "n":
-            print ("Taking you back to the main menu")
             teleporter()
             
             
@@ -671,8 +673,18 @@ def teleporter():
             print ("taking you to the leaderboards")
             editing()
         elif yesorno == "n":
-            print ("Taking you back to the whitelist now")
             teleporter()
+
+    if choice == ("0"):
+        print ("would you like to go to the teleporter")
+        print ("y/n")
+        yesorno = input()
+        if yesorno == "y":
+            print ("taking you to the teleporter")
+            teleporter()
+        elif yesorno == "n":
+            teleporter()
+            
                
 
 def gamemenu():
@@ -737,7 +749,7 @@ def Calculator():
 
     else:
             print("Unknown input")
-         
+    teleporter()
             
 def Credits():
 
@@ -758,7 +770,7 @@ def Credits():
     print (" ")
     time.sleep(1)
     print ("All made by former computer science GCSE students")
-    
+    teleporter()
 def factfilefun():
     global fullname
     global firstname
@@ -790,7 +802,7 @@ def factfilefun():
 
     #telling the user their username
     print ("Your username is:",username)
-    
+
     
 
 def SleepCalculator():
@@ -817,7 +829,7 @@ def SleepCalculator():
 
     print ("You sleep",hoursperyear,"hours per year")
     print(" ")
-
+    teleporter()
 def turtledrawing():
     print("Would you like a :")
     print("Polygon/Spyrograph Automatic Drawer = 1")
@@ -834,7 +846,7 @@ def turtledrawing():
     
     if choiceforturtle == "A flower drawing service" or "3":
         print(turtledrawingcharlie)
-
+    
 
 def turtledrawingcharlie():
 
@@ -1001,7 +1013,7 @@ def turtledrawingben():
         print("                                                    ")
         print("Your choice is not a current function availiable please restart the process")
 
-
+######################################################################################
 #Your name
 
 #firstname, asks for fistname and inputs it to a variable
