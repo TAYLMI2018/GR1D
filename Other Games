@@ -14,6 +14,8 @@ gamesmenu2():
       print ("5. Property")
       choice = input()
       if choice == ("1"):
-        print ("")
-
-  
+        print ("If you are reading this you probably have around 1 million or less or more in your wallet on GTA. My advice to a person of your wealth is to straight away put all of your money into the bank. this means that when someone kills you, your money doesnt fall out of your wallet.")
+        print ("Also a suggestion is to invest into a major company with high shares. Then you can wait until night passes and in the morning recheck the shares. If they have gone ul sell them and be proud of your profit but if they have gone down DO NOT SELL THEM but wait another day until they go up.")
+        gamesmenu2()
+      elif choice == ("2"):
+        print ("If you are wondering about your dream for purchasing a fast car you firstly need some money. So go to money advice and learn off of that. But for cars you will preferably want to purchase a nice garage")
