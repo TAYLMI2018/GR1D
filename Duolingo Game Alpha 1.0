@@ -1,11 +1,11 @@
-def(Ghost Game):
+def(Duolingo_Game):
 
-#Ghost Game Alpha 1.0
+#Duolingo Game Alpha 1.0
 
 import random
 import time
 
-print('Ghost Game')
+print('Duolingo Game')
 print( ' ' )
 print('Alpha 1.0')
 time.sleep(1)
@@ -20,7 +20,7 @@ print( ' ' )
 print( ' ' )
 
 
-print('Welcome to Ghost Game! Your challenge is to make it through as many doors as you \npossibly can before getting caught by the ghost.')
+print('Welcome to Duolingo Game! Your challenge is to make it through as many doors as you \npossibly can before getting caught by Doulingo.')
 print( ' ' )
 print(' (Please dont type anything until the game has loaded!)')
 
@@ -52,7 +52,7 @@ while usernumb != ghostnumber:
     print( ' ' )
     time.sleep(1)
     
-    print("Ghost is behind...")
+    print("Duolingo is behind...")
     time.sleep(2)
     print( ' ' )
     print('Door', ghostnumber)
@@ -61,10 +61,10 @@ while usernumb != ghostnumber:
     
     if usernumb == ghostnumber:
         print( ' ' )
-        print('OH NO! You found the Ghost! at least the ghost is not hungry anymore! Game Over!')
+        print('OH NO! You found Duolingo! Game Over!')
         print( ' ' )
         time.sleep(1)
-        print('the Ghost says. HA HA HA! You cannot fool me, I have eaten many humans \nwho try & outsmart me but none of them can. >:]')
+        print('Duolingo says. HA HA HA! You cannot fool me, I have captured a lot of people \nwho try & miss language lessons but none of them can. >:]')
         print( ' ' )
         time.sleep(2)   
         print ("Your final score is " , score)
@@ -74,7 +74,7 @@ while usernumb != ghostnumber:
         
     else:
         print( ' ' )
-        print('Phew! your are safe. no dinner for the Ghost this time.')
+        print('Phew! your are safe. no family for Duolingo this time.')
         time.sleep(1)
         score = score + 1
         level = level + 1
@@ -102,4 +102,7 @@ while usernumb != ghostnumber:
 
     if level == 30:
         score = score + random.randint (-24,48)
-      
+
+    if level == 35:
+        score=score+random.randint (-48,96)
+
