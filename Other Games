@@ -1,5 +1,16 @@
-if yesorno == ("0.1475"):
-  print ("1: GTA menu")
-  print ("2: Warframe menu")
-  print ("3. Fortnite menu")
-  print ("4. Red Dead Redemption 2")
+
+gamesmenu2():
+  if yesorno == ("0.1475"):
+    print ("1.765: GTA menu")
+    print ("2.345: Warframe menu")
+    print ("3.567: Fortnite menu")
+    print ("4.789: Red Dead Redemption 2 menu")
+    choice = input()
+    if choice == ("1.765"):
+      print ("1. Money Advice")
+      print ("2. Car Advice")
+      print ("3. Easter eggs")
+      print ("4. Shareholding")
+      print ("5. Property")
+
+  
