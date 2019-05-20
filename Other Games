@@ -12,5 +12,8 @@ gamesmenu2():
       print ("3. Easter eggs")
       print ("4. Shareholding")
       print ("5. Property")
+      choice = input()
+      if choice == ("1"):
+        print ("")
 
   
