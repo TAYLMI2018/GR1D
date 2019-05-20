@@ -1,0 +1,5 @@
+if yesorno == ("0.1475"):
+  print ("1: GTA menu")
+  print ("2: Warframe menu")
+  print ("3. Fortnite menu")
+  print ("4. Red Dead Redemption 2")
