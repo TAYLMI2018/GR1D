@@ -394,7 +394,7 @@ def turtledrawingharry():
     TK.mainloop()
 
 def turtledrawingben():
-
+   
     import turtle
 
     wn = turtle.Screen()
@@ -409,34 +409,18 @@ def turtledrawingben():
             bob.left(360/sides)
 
 
-    def spyrograph():
-        for i in range(48):
-            bob.forward(size)
-            bob.left(360/sides-1)
-
-
     print ("Welcome to GR1D's Self Running Drawing Service")
     print ("           ")
     print ("Enter the shape for which you would like us to draw")
-    print ("Spyrograph - 1")
-    print ("Polygon - 2")
+    print ("Polygon - 1")
     print ("                    ")
 
     choicefordrawing = input()
 
-    if choicefordrawing == "Spyrograph" or "1" or "spyrograph":
-        sides = int(input("How many sides would you like?            "))
-        print("                ")
-        size = int(input("What size of Spyrograph           "))
-        print("                ")
-        print("We are going to start the process now")
-        print("**************")
-        spyrograph()
-
-    if choicefordrawing == "Polygon" or "2" or "syprograph":
+    if choicefordrawing == "Polygon" or "1":
         sides = int(input("How many sides would you like?           "))
         print("            ")
-        size = int(input("What size of Polygon            "))
+        size = int(input("What size of Polygon? 10-200            "))
         print("              ")
         print("We are going to start the process now")
         print("**************")
@@ -445,6 +429,8 @@ def turtledrawingben():
     else:
         print("                                                    ")
         print("Your choice is not a current function availiable please restart the process")
+        
+    turtledrawingben()
 ####################################################################################
 
 def grid2():    
