@@ -446,6 +446,7 @@ def grid2():
     print ("8. view your weekly action")
     print ("9. leaderboards")
     print ("0. teleporter")
+    print ("01. Console games")
     print ("Please input the function you would like")
     choice = input()
     print (choice)
@@ -537,7 +538,7 @@ def grid2():
             teleporter()
 
     if choice == ("0"):
-        print ("would you like to go to the teleporter")
+        print ("would you like to enter the teleporter")
         print ("y/n")
         yesorno = input()
         if yesorno == "y":
@@ -546,12 +547,65 @@ def grid2():
         elif yesorno == "n":
             teleporter()
             
+     if choice == ("01"):
+        print ("would you like to enter the Console games menu?")
+        print ("y/n")
+        yesorno = input()
+        if yesorno == "y":
+            print ("taking you to the console games menu")
+            gamesmenu2()
+        elif yesorno == "n":
+            teleporter()
 
 
 def weeklyaction():
     print ("your team have accesed the GR1D for one hour on Monday the 13th of May, from 2:05 to 3:05")
     print ("taking you back to the whitelist")
     teleporter()
+
+
+def gamesmenu2():
+    print ("1: GTA menu")
+    print ("2: Warframe menu")
+    print ("3: Fortnite menu")
+    print ("4: Red Dead Redemption 2 menu")
+    print ("5: Teleporter")
+    choice = input()
+    if choice == ("1"):
+        print ("1. Money Advice")
+        print ("2. Car Advice")
+        print ("3. Easter eggs")
+        print ("4. Money per month/year")
+        print ("5. Property")
+        choice = input()
+        if choice == ("1"):
+            print ("If you are reading this you probably have around 1 million or less or more in your wallet on GTA. My advice to a person of your wealth is to straight away put all of your money into the bank. this means that when someone kills you, your money doesnt fall out of your wallet.")
+            print ("Also a suggestion is to invest into a major company with high shares. Then you can wait until night passes and in the morning recheck the shares. If they have gone ul sell them and be proud of your profit but if they have gone down DO NOT SELL THEM but wait another day until they go up.")
+            gamesmenu2()
+        elif choice == ("2"):
+            print ("If you are wondering about your dream for purchasing a fast car you firstly need some money. So go to money advice and learn off of that. But for cars you will preferably want to purchase a nice garage. This garage should be ARENA WAR as you can modify your vehicle to an even higher extent.")
+            print ("After you got the garage, purchase your car from BENNY'S as they are cheap and have ready made customs. If you cannot afford a garage its ok to use BENNY'S for the time bieng but my advise to you is to buy a garage.")
+            gamesmenu2()
+        elif choice == ("3"):
+            print ("1: \n This is my personal favourite EASTER EGG. Around the city of Los Santos there is a mysterious number'8' written on some walls and stones. This 8 is a serial killer who (if you follow the clues) brings you to one of his victims bodies. This body is underneath the surface of the water, wrapped in bandages. the location of this body is within the furthest of the four main islands at the top of Los Santos.")
+            print ("2: \n The second easter egg is a short and simple one to find and interact with. This special part of the game is found at the start of the motorway when you are aiming to head to BLAINE COUNTY. (next to the beach). It is a picture of a lady who seems to be running for mayor and you an look up her name on your phone and then cast a vote in for her.") 
+            print ("3: \n My final Easter Egg that I will be sharing with you is the one where you see the ghost in the hills of VINEWOOD. Rumour has it that this ghost is said to be killed by her former Husband who was als a stuntman. He pushed her off a cliff and is now running for mayor. You come across this man in one of Trevor's STRANGERS AND FREAKS missions (Nigel). The ghost is said to Huant the hills of Vinewood at a certain place and time currently unknown to us at this point. But if you are contemplating taking part in this labour do know that we think that it is the hardest complete")
+            gamesmenu2()
+        elif choice == ("4"):
+            print("how much money do you make per day?")
+            print("Without property or missions the average is $100. With property (eg. Nightclub) $500. With missions the earnings are $250.")
+            hourspernight = int(input())
+            hoursperweek = hourspernight * 7
+            print("You earn",hoursperweek,"dollars every week")
+            print(" ")
+            hourspermonth = hoursperweek * 4.35
+            print("You earn",hourspermonth,"dollars every month")
+            print(" ")
+            hoursperyear = hourspernight * 365
+            print ("You earn",hoursperyear,"dollars every year")
+            gamesmenu2()
+    elif yesorno == ("n"):
+        teleporter()
 
 
 
