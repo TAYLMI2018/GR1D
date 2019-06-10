@@ -6,9 +6,8 @@ def gamesmenu2():
     yesorno = input()
     if yesorno == ("y"):
         print ("1: GTA menu")
-        print ("2: Warframe menu")
-        print ("3: Fortnite menu")
-        print ("4: Red Dead Redemption 2 menu")
+        print ("2: Fortnite menu")
+        print ("3: Red Dead Redemption 2 menu")
         choice = input()
         if choice == ("1"):
             print ("1. Money Advice")
@@ -43,5 +42,7 @@ def gamesmenu2():
                 hoursperyear = hourspernight * 365
                 print ("You earn",hoursperyear,"dollars every year")
                 gamesmenu2()
-        elif yesorno == ("n"):
-            teleporter()
+    elif yesorno == ("n"):
+        teleporter()
+        elif choice == ("2"):
+            
