@@ -1,6 +1,6 @@
 def(Duolingo_Game):
 
-#Duolingo Game Alpha 1.0
+#Duolingo Game Alpha 1.02
 
 import random
 import time
