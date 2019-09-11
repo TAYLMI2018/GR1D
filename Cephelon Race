@@ -1,0 +1,72 @@
+#def cephelonrace():
+
+
+import turtle
+wn = turtle.Screen()
+wn.bgcolor("white")
+
+
+from random import randint
+from turtle import *
+penup()
+goto(-140, 140)
+
+for step in range(15):
+    write(step, align='center')
+    right(90)
+    forward(10)
+    pendown()
+    forward(200)
+    penup()
+    backward(210)
+    left(90)
+    forward(20)
+
+syn = Turtle()
+syn.color('magenta')
+syn.shape('turtle')
+
+syn.penup()
+syn.goto(-160, 100)
+syn.pendown()
+
+suda = Turtle()
+suda.color('blue')
+suda.shape('turtle')
+
+suda.penup()
+suda.goto(-160, 70)
+suda.pendown()
+
+simaris = Turtle()
+simaris.color('yellow')
+
+simaris.shape('turtle')
+
+simaris.penup()
+simaris.goto(-160, 40)
+simaris.pendown()
+
+vull = Turtle()
+vull.color('purple')
+vull.shape('turtle')
+
+vull.penup()
+vull.goto(-160, 10)
+vull.pendown()
+
+apnar = Turtle()
+apnar.color('orange')
+apnar.shape('turtle')
+
+apnar.penup()
+apnar.goto(-160, -20)
+apnar.pendown()
+
+for turn in range(100):
+    syn.forward(randint(1,5))
+    suda.forward(randint(1,5))
+    simaris.forward(randint(1,5))
+    vull.forward(randint(1,5))
+    apnar.forward(randint(1,5))
+    
