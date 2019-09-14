@@ -4,11 +4,14 @@ def gamemenu():
   print("**********************")
   print(" ")
   print("Your options are:")
-  print("Ghost Game, made by Charlie Patterson")
+  print("Ghost Game, by Charlie Patterson")
   print(" ")
   print("0R")
   print(" ")
   print("Pathways, by GR1D collectively")
+  print(" ")
+  print("0R")
+  print("Rock, Paper, Scissors by Ben Leacock ")
   choice = input()
  
   elif choice == "ghost game" or "1":
@@ -17,4 +20,5 @@ def gamemenu():
   elif choice == "pathways" or "2":
     pathways()
   
-  
+   elif choice == "rps" or "2":
+    rps
