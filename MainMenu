@@ -8,7 +8,9 @@ def mainmenu():
     
     
     print ("Welcome to the GR1D menu")
+    time.sleep(2)
     print ("Please select the number of the function you would like to acess")
+    time.sleep(2)
     print ("1. Personal Factfile")
     print ("2. Calculator")
     print ("3. Turtle Drawing")
@@ -16,6 +18,7 @@ def mainmenu():
     print ("5. Games")
     print ("6. Credits")
     print ("7. Log Out of the GR1D")
+    time.sleep(3)
     print ("Please input the function you would like")
     choice = input()
 
