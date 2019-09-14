@@ -11,7 +11,8 @@ def gamemenu():
   print("Pathways, by GR1D collectively")
   print(" ")
   print("0R")
-  print("Rock, Paper, Scissors by Ben Leacock and contributed to by the GR1D ")
+  print("Rock, Paper, Scissors by Ben Leacock") 
+  (" and contributed to by the GR1D ")
   choice = input()
  
   elif choice == "ghost game" or "1":
