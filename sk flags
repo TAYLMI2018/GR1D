@@ -1,0 +1,32 @@
+import time
+import turtle
+
+print ("press '1' to see the menu")
+one = input()
+if one == ("1"):
+    print ("---------------------------")
+    print ("Press 'a' for China")
+    print ("Press 'b' for Germany")
+    print ("Press 'c' for Great Britain")
+    print ("Press 'd' for France")
+    print ("---------------------------")
+    letter = input()
+    if letter == ("a"):
+        wn = turtle.Screen()
+        wn.bgcolor("black")
+        bob = turtle.Turtle()
+        bob.speed(0)
+        bob.color("orange")
+        bob.width(5)
+        for i in range(1):
+            bob.forward(200)
+            bob.left(90)
+            bob.forward(100)
+            bob.left(90)
+            bob.forward(200)
+            bob.left(90)
+            bob.forward(100)
+            bob.color("black")
+            bob.left(135)
+            bob.forward(100)
+            
