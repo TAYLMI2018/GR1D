@@ -1,0 +1,49 @@
+def(TurtleDrawingCharlie2):
+
+  import turtle #Adding turtle to this code
+
+  wn = turtle.Screen()
+  wn.bgcolor('white')
+  jim = turtle.Turtle() #Changing turtle's name
+  jim.speed(3) #Sets the turtles speed
+  jim.pensize(5) #changes the turtles pensize
+  jim.color('black')
+  jim.shape('turtle') #changes the turtles appearence
+
+
+  for i in range(1): #using repeats to draw the flag rectangle
+      for i in range(2):
+          jim.forward(600)
+          jim.left(90)
+          jim.forward(400)
+          jim.left(90)
+        
+  jim.forward(300)
+  jim.left(90)
+  penup() #lifts up pen to allow turtle to move
+  jim.color('white')
+  jim.forward(200)
+  jim.pensize(10)
+  pendown() #put pen down to allow drawing
+  jim.speed(0)
+  jim.color('red')
+  def flower():
+    for i in range(36): #repeating the squares
+        square()
+        jim.left(10)
+
+
+
+  def square():
+     for i in range(4):
+       jim.forward(100)
+       jim.left(90)
+
+  def flower2():
+     for i in range(2):
+        jim.right(115)
+        flower()
+
+
+
+  flower2()
