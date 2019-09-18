@@ -1,4 +1,4 @@
-def(TurtleDrawingCharlie2):
+def TurtleDrawingCharlie2():
 
   import turtle #Adding turtle to this code
 
