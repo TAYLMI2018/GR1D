@@ -1,1 +1,66 @@
+#def turtleflag():
+    
+    
+import turtle
+
+from turtle import TurtleScreen, RawTurtle, TK
+
+
+
+root = TK.Tk()
+canvas = TK.Canvas(root, width=2000, height=1200)
+canvas.pack()
+wn = TurtleScreen(canvas)
+root.wm_title("Harry's Drawing Pad")
+wn.bgcolor("black") 
+turtle = RawTurtle(wn) 
+turtle.speed(0)
+
+
+def square():
+   for i in range(4):
+      turtle.forward(100)
+      turtle.left(90)
+
+def whiterec():
+   turtle.setpos(0,0)
+   turtle.fillcolor("white")
+   turtle.begin_fill()
+   for i in range(2):
+      turtle.forward(800)
+      turtle.left(90)
+      turtle.forward(400)
+      turtle.left(90)
+   turtle.end_fill()
+   turtle.setpos(0,0)
+
+def redcircle():
+  turtle.fillcolor("red")
+  turtle.begin_fill()
+  for i in range(36):
+      turtle.forward(20)
+      turtle.left(10)
+  turtle.end_fill()
+   
+
+def clear():
+  turtle.clear()
+
+
+def redf():
+   turtle.fillcolor("red")
+   
+
+whiterec()
+#redcircle()
+
+   
+
+    
+        
+    
+
+    
+
+    
 
