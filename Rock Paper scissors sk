@@ -1,0 +1,61 @@
+import random
+import time
+
+randomchoice = ["rock","paper","scissors"]
+
+def one():
+    computer = random.choice(randomchoice)      #menu and 1 - play input function
+    print ("rock")
+    time.sleep(0.5)
+    print ("paper")
+    time.sleep(0.5)
+    print ("scissors")
+    yourchoice = input()
+    if yourchoice == (computer):
+        print ("Draw")
+        print ("your choice is:", yourchoice, "\n and the computers choice is:", computer)
+        time.sleep(1)
+        one()
+    elif yourchoice == ("scissors") and computer == ("paper"):  #the winner = user
+        print ("You Win!")
+        print ("your choice is:", yourchoice, "\n and the computers choice is:", computer)
+        time.sleep(1)
+        one()
+    elif yourchoice == ("scissors") and computer == ("rock"):     #the loser = user
+        print ("You Lose!")
+        print ("your choice is:", yourchoice, "\n and the computers choice is:", computer)
+        time.sleep(1)
+        one()
+    elif yourchoice == ("rock") and computer == ("paper"):          #the loser = user
+        print ("You Lose!")
+        print ("your choice is:", yourchoice, "\n and the computers choice is:", computer)
+        time.sleep(1)
+        one()
+    elif yourchoice == ("rock") and computer == ("scissors"):      #the winner = user
+        print ("You Win!")
+        print ("your choice is:", yourchoice, "\n and the computers choice is:", computer)
+        time.sleep(1)
+        one()
+    elif yourchoice == ("paper") and computer == ("rock"):     #the winner = user
+        print ("You Win!")
+        print ("your choice is:", yourchoice, "\n and the computers choice is:", computer)
+        time.sleep(1)
+        one()
+    elif yourchoice == ("paper") and computer == ("scissors"):  #the loser = user
+        print ("You Lose!")
+        print ("your choice is:", yourchoice, "\n and the computers choice is:", computer)
+        time.sleep(1)
+        one()
+    else:
+        print ("sorry we did not get that")
+        one()
+
+
+
+
+print ("++++++++++++++++++++++")
+print ("1 - Play")
+print ("++++++++++++++++++++++")
+player = input("enter 1 to play")
+if player == ("1"):
+    one()
