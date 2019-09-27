@@ -1,32 +1,114 @@
-import time
-import turtle
+#rectangle code for the writer only
+def rectangle():
+    for i in range(1):
+        bob.forward(200)
+        bob.left(90)
+        bob.forward(100)
+        bob.left(90)
+        bob.forward(200)
+        bob.left(90)
+        bob.forward(100)
+#small star code for the writer only
+def star():
+    for i in range(5):
+        bob.fillcolor("yellow")
+        bob.begin_fill()
+        bob.forward(20)
+        bob.right(144)
+        bob.end_fill()
+#bigger star code for the writer only
+def bigstar():
+    for i in range(5):
+        bob.fillcolor("yellow")
+        bob.begin_fill()
+        bob.forward(60)
+        bob.right(144)
+        bob.end_fill()
+            
+
+
+def china():#China
+    bob.fillcolor("Red")
+    bob.begin_fill()#start filling
+    bob.forward(400)
+    bob.left(90)
+    bob.forward(200)
+    bob.left(90)
+    bob.forward(400)
+    bob.left(90)
+    bob.forward(200)
+    bob.end_fill()#stop filling
+    bob.penup()
+    bob.left(145) 
+    bob.forward(200)
+    bob.pendown()
+    bob.color("yellow")
+    bob.width(1)
+    star()
+    bob.penup()
+    bob.right(100)
+    bob.forward(25)
+    bob.pendown()
+    star()
+    bob.penup()
+    bob.right(45)
+    bob.forward(40)
+    bob.pendown()
+    star()
+    bob.penup()
+    bob.right(90)
+    bob.forward(85)
+    bob.right(90)
+    bob.forward(10)
+    bob.pendown()
+    bigstar() #bigger star 
+    
+
+def germany(): #Germany
+    for i in range(1):
+        bob.fillcolour("black")
+        bob.begin_fill()
+        bob.forward(400)
+        bob.left(90)
+        bob.forward(100)
+        bob.left(90)
+        bob.forward(400)
+        bob.left(90)
+        bob.forward(100)
+        bob.end_fill()
+
 
 print ("press '1' to see the menu")
 one = input()
 if one == ("1"):
     print ("---------------------------")
-    print ("Press 'a' for China")
+    print ("Press 'a' for China")                #main menu not as a define function at the moment 
     print ("Press 'b' for Germany")
     print ("Press 'c' for Great Britain")
     print ("Press 'd' for France")
     print ("---------------------------")
     letter = input()
-    if letter == ("a"):
+    if letter == ("a"):   #china
         wn = turtle.Screen()
-        wn.bgcolor("black")
+        wn.bgcolor("white")
         bob = turtle.Turtle()
         bob.speed(0)
-        bob.color("orange")
+        bob.color("black")
         bob.width(5)
-        for i in range(1):
-            bob.forward(200)
-            bob.left(90)
-            bob.forward(100)
-            bob.left(90)
-            bob.forward(200)
-            bob.left(90)
-            bob.forward(100)
-            bob.color("black")
-            bob.left(135)
-            bob.forward(100)
-            
+        china()
+    elif letter == ("b"): #germany
+        wn = turtle.Screen()
+        wn.bgcolor("white")
+        bob = turtle.Turtle()
+        bob.speed(0)
+        bob.color("black")
+        bob.width(5)
+        germany()
+    
+        
+
+
+
+
+
+
