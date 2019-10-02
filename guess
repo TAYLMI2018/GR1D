@@ -1,0 +1,39 @@
+import time
+import random
+
+def guess():
+    target = random.randint(1,100)
+    guesses = 1
+    userChoice = int(input("Guess the number: "))
+    while userChoice != target:
+        
+        guesses = guesses + 1
+        if userChoice < target:
+            time.sleep(1)
+            print("############")
+            time.sleep(1)
+            print("Guess higher!")
+            time.sleep(1)
+            userChoice = int(input("Guess the number: "))
+
+        else:
+            time.sleep(1)
+            print("Guess lower!")
+            time.sleep(1)
+            userChoice = int(input("Guess the number: "))
+    time.sleep(1)
+    print("Well Done, you have guessed the number correctly!")
+    time.sleep(1)
+    print("It took you" , guesses, "guesses!")
+    time.sleep(1)
+    print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+    time.sleep(1)
+    playagain = input("Would you like to play again? y/n: ")
+    if playagain == "y":
+        guess()
+    else:
+        print("Thank you for playing!")
+        print("----------------------")
+
+guess()
+
